@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BlueLoch | Consultancy Services</title>
+
+	<!-- Link Preview MetaData -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://blueloch.co.uk/" />
+	<meta property="og:title" content="BlueLoch Software Solutions" />
+	<meta property="og:description" content="BlueLoch develops and sells software that suits your business needs." />
+	<meta property="og:image" content="https://blueloch.co.uk/images/BlueLochLogo-DarkMode.png" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="/images/logos/BlueLochNessy.png" />
+	<link rel="stylesheet" href="/styles.css" />
+	<script src="/scripts/sidebar.js"></script>
+</head>
+
+<body onload="setSidebarStatus()" onresize="setSidebarStatus()">
+	<div id="splash">
+		<img src="/images/logos/BlueLochLogo-LightMode.png"
+			style="max-width: 80%; margin-top: 100px; max-height: 500px;">
+		<div class="progressBar"></div>
+		<p>Loading...</p>
+	</div>
+
+	<div id="sidebar" class="sidebar-animated">
+		<a href="/index.html">
+			<img id="sidebar-logo" src="/images/logos/BlueLochText-DarkMode.png">
+		</a>
+
+		<div class="sidebar-list">
+			<a href="/index.html" class="sidebar-link">Home</a>
+			<!--<a href="/pages/about.html" class="sidebar-link">About&nbsp;us</a>-->
+			<a href="/pages/contact.html" class="sidebar-link">Contact&nbsp;us</a>
+			<a href="/pages/support/support_hub.html" class="sidebar-link">Support</a>
+		</div>
+	</div>
+
+	<span id="openside" class="stick summon" onclick="openSidebar()">►</span>
+
+	<div id="page">
+		<h1 class="head-content">Consultancy Services</h1>
+		<hr>
+
+		<div class="content">
+			<div class="section-text">
+				<p class="subheading">
+					We are happy to offer advice and assistance in our various areas of expertise.
+				</p>
+			</div>
+
+			<div class="section-text">
+				<h2>IT support</h2>
+				<div class="service-grid section-inner">
+					<div class="service-grid-column" style="flex: 68%; text-align: left;">
+						<h3>Workspace and 365</h3>
+						<p>Setting up your company's IT can be a little fiddly. That's why we offer our services in
+							helping
+							to set up Microsoft 365 and Google Workspace and their respective email services. Once
+							everything's set up, we're happy to continue managing these systems on your behalf.
+						</p>
+					</div>
+
+					<div class="service-grid-column" style="flex: 30%">
+						<img src="/images/other/officeworkspace.png"
+							style="max-height: 150px; border-radius: 0; background-color: #c0c6d3"
+							class="mobile-lessgap">
+					</div>
+				</div>
+
+				<br>
+
+				<div class="service-grid section-inner">
+					<div class="service-grid-column" style="flex: 68%; text-align: left;">
+						<h3>Domain Management</h3>
+						<p>It can be tricky managing your company's domain. Add in other software such as Microsoft 365 and
+							Workspace and it can all get quite complicated. That's why we offer domain management services.
+							This includes the aforementioned Microsoft 365 and Workspace management, as well as website
+							hosting. If we built your website for you this can make things easier on your end.
+						</p>
+					</div>
+
+					<div class="service-grid-column" style="flex: 30%">
+						<img src="/images/other/domains.png"
+							style="max-height: 150px; border-radius: 0; background-color: #c0c6d3"
+							class="mobile-lessgap">
+					</div>
+				</div>
+				<p></p>
+			</div>
+
+			<div class="section-text">
+				<h2>Other consultancy services</h2>
+				<div class="service-grid section-inner">
+					<div class="service-grid-column" style="flex: 68%; text-align: left;">
+						<h3>Interface Design</h3>
+						<p>Designing a good interface is hard. You want it to look great, but it needs to be easy to use
+							too. At BlueLoch we'll be happy to help you create your ideal UI for your software. You don't
+							even need to choose us to develop your software.</p>
+					</div>
+
+					<div class="service-grid-column" style="flex: 30%">
+						<img src="/images/other/uidesign.png"
+							style="max-height: 150px; border-radius: 0; background-color: #c0c6d3"
+							class="mobile-lessgap">
+					</div>
+				</div>
+
+				<p></p>
+			</div>
+		</div>
+		<hr>
+		<p style="text-align: center; font-size: 0.7em;">BlueLoch Software Solutions Ltd. | <a class="intext-link"
+				href="https://find-and-update.company-information.service.gov.uk/company/SC776047">No:
+				SC776047</a><br>Copyright ©
+			<script>document.write(new Date().getFullYear())</script>
+		</p>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BlueLoch | Contact Us</title>
+
+	<!-- Link Preview MetaData -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://blueloch.co.uk/" />
+	<meta property="og:title" content="BlueLoch Software Solutions" />
+	<meta property="og:description" content="BlueLoch develops and sells software that suits your business needs." />
+	<meta property="og:image" content="https://blueloch.co.uk/images/BlueLochLogo-DarkMode.png" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="/images/logos/BlueLochNessy.png" />
+	<link rel="stylesheet" href="/styles.css" />
+	<script src="/scripts/sidebar.js"></script>
+
+	<script>
+		function copy() {
+			navigator.clipboard.writeText("BlueLoch Software Solutions, 272 Bath Street, Glasgow, Scotland, G2 4JR");
+			alert("Address copied to clickboard.");
+		}
+	</script>
+</head>
+
+<body onload="setSidebarStatus()" onresize="setSidebarStatus()">
+	<div id="splash">
+		<img src="/images/logos/BlueLochLogo-LightMode.png"
+			style="max-width: 80%; margin-top: 100px; max-height: 500px;">
+		<div class="progressBar"></div>
+		<p>Loading...</p>
+	</div>
+
+	<div id="sidebar" class="sidebar-animated">
+		<a href="/index.html">
+			<img id="sidebar-logo" src="/images/logos/BlueLochText-DarkMode.png">
+		</a>
+
+		<div class="sidebar-list">
+			<a href="/index.html" class="sidebar-link">Home</a>
+			<!--<a href="/pages/about.html" class="sidebar-link">About&nbsp;us</a>-->
+			<a href="/pages/contact.html" class="sidebar-link">Contact&nbsp;us</a>
+			<a href="/pages/support/support_hub.html" class="sidebar-link">Support</a>
+		</div>
+	</div>
+
+	<span id="openside" class="stick summon" onclick="openSidebar()">►</span>
+
+	<div id="page">
+		<h1 class="head-content">Contact us</h1>
+		<hr>
+
+		<div class="content">
+			<div class="section-text">
+				<p class="subheading">Whether it's about business, or you just have some questions for us, we'd love to
+					hear from you.</p>
+			</div>
+
+
+			<div class="section-text">
+				<p></p>
+				<div class="service-grid" style="align-items: start;">
+					<div class="service-grid-column">
+						<h2>Business</h2>
+						<p>Email: <a href="mailto:contact@blueloch.co.uk" class="inline-link">contact@blueloch.co.uk</a>
+						</p>
+						<p>
+							BlueLoch Software Solutions<br>
+							272 Bath Street<br>
+							Glasgow, Scotland<br>
+							G2 4JR<!--<br>
+							<button onclick="copy()">Copy to Clipboard</button>-->
+						</p>
+					</div>
+
+					<div class="service-grid-column">
+						<h2>Support</h2>
+						<p>Email: <a href="mailto:support@blueloch.co.uk" class="inline-link">support@blueloch.co.uk</a>
+						</p>
+
+						<h2>Social Media</h2>
+						<p>Instagram: <a href="https://www.instagram.com/bluelochsoftware/"
+								class="inline-link">@bluelochsoftware</a></p>
+					</div>
+				</div>
+				<p></p>
+			</div>
+
+
+			<!-- POSTMAIL FORM, leave for now -->
+			<!-- <div class="section-text">
+				<div class="postmail-form">
+					<form id="postmail-input">
+						<p class="subheading">Alternatively, message us directly:</p>
+						<div class="service-grid">
+							<div class="service-grid-column">
+								<div class="service-grid-text">
+									<label for="name"><mark class="mark-required">*</mark>Name:</label>
+									<input type="text" id="name" name="name" placeholder="Your name" class="formline"
+										maxlength="100" minlength="1" required /><br>
+								</div>
+
+								<div class="service-grid-text">
+									<label for="email"><mark class="mark-required">*</mark>Email:</label>
+									<input type="text" id="email" name="reply_to" placeholder="Your email"
+										class="formline" maxlength="50" minlength="3" required /><br>
+								</div>
+							</div>
+
+							<div class="service-grid-column">
+								<div class="service-grid-text">
+									<label for="subject"><mark
+											style="color: orange; background-color: inherit;">*</mark>Subject:</label>
+									<input type="text" id="subject" name="subject" placeholder="Subject"
+										class="formline" maxlength="50" minlength="3" required />
+								</div>
+							</div>
+
+							<div class="service-grid-column">
+								<div class="service-grid-text">
+									<textarea name="text" placeholder="Message" class="formarea" id="textarea"
+										minlength="10" required></textarea>
+
+									<input type="submit" class="submit-button" id="js_send" value="Send" />
+								</div>
+							</div>
+						</div>
+
+
+					</form>
+				</div>
+			</div> -->
+
+
+		</div>
+		<hr>
+		<p style="text-align: center; font-size: 0.7em;">BlueLoch Software Solutions Ltd. | <a class="intext-link"
+				href="https://find-and-update.company-information.service.gov.uk/company/SC776047">No:
+				SC776047</a><br>Copyright ©
+			<script>document.write(new Date().getFullYear())</script>
+		</p>
+	</div>
+
+	<!--
+	<script>
+		//update this with your js_form selector
+		var form_id_js = "form-input";
+
+		var data_js = {
+			"access_token": "vqdq7mz07bsl3n6kfdflp28h"
+		};
+
+		function js_onSuccess() {
+			alert("Your message was sent successfully.");
+		}
+
+		function js_onError(error) {
+			alert("Your message failed to send.");
+		}
+
+		var sendButton = document.getElementById("js_send");
+
+		function js_send() {
+			var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
+			var message = document.querySelector("#" + form_id_js + " [name='text']").value;
+			var email = document.querySelector("#" + form_id_js + " [name='reply_to']").value;
+			var name = document.querySelector("#" + form_id_js + " [name='name']").value;
+
+			if (subject != "" && message != "" && email != "" && name != "") {
+				data_js['reply_to'] = email;
+				data_js['subject'] = subject + " | Via blueloch.co.uk";
+				data_js['text'] = "Sender: " + name + "\r\nEmail: " + email + "\r\nMessage:\r\n" + message;
+
+				var params = toParams(data_js);
+
+				var request = new XMLHttpRequest();
+				request.open("POST", "https://postmail.invotes.com/send", true);
+				request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+				request.send(params);
+
+				sendButton.value = 'Sending…';
+				sendButton.disabled = true;
+				var request = new XMLHttpRequest();
+				request.onreadystatechange = function () {
+					if (request.readyState == 4 && request.status == 200) {
+						js_onSuccess();
+					} else
+						if (request.readyState == 4) {
+							js_onError(request.response);
+						}
+				};
+
+				let newEl = '<p class="subheading">Your message has been sent. We\'ll get back to you as soon as possible.</p>';
+				document.getElementById("replaceable").outerHTML = newEl;
+			} else {
+				alert("Please fill in all required fields.");
+			}
+
+			return false;
+		}
+
+		sendButton.onclick = js_send;
+
+		function toParams(data_js) {
+			var form_data = [];
+			for (var key in data_js) {
+				form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+			}
+
+			return form_data.join("&");
+		}
+
+		var js_form = document.getElementById(form_id_js);
+		js_form.addEventListener("submit", function (e) {
+			e.preventDefault();
+		});
+	</script>-->
+</body>
+
+</html>
