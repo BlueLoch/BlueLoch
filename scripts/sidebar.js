@@ -62,4 +62,33 @@ function setSidebarStatus() {
 
         document.getElementById("openside").style.display = "block"; //hides the show sidebar button
     }
+
+    checkCookies()
+}
+
+function checkCookies() {
+    if (localStorage.cookiesSeen != "yes") {
+        document.getElementById("cookies").style.display = "block";
+
+        document.getElementById("sidebar").style.filter = "blur(10px) grayscale(100%)";
+        document.getElementById("openside").style.filter = "blur(10px) grayscale(100%)";
+        
+        document.getElementById("page").style.filter = "blur(10px) grayscale(100%)";
+    }
+}
+
+function closeCookies() {
+    document.getElementById("cookies").style.display = "none";
+
+    document.getElementById("sidebar").style.filter = "blur(0) grayscale(0)";
+    document.getElementById("openside").style.filter = "blur(0) grayscale(0)";
+
+    document.getElementById("page").style.filter = "blur(0) grayscale(0)";
+
+    localStorage.setItem("cookiesSeen", "yes");
+}
+
+function rdrctToPrivacy() {
+    localStorage.setItem("cookiesSeen", "yes");
+    window.location.href = "/pages/privacy_policy.html";
 }
