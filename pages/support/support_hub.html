@@ -30,7 +30,7 @@
 			if (activeBtn != null) {
 				activeBtn.classList.replace("os-selector-active", "os-selector-inactive");
 			}
-			
+
 			document.getElementById(os).style.display = "block";
 			document.getElementById("btn-" + os).classList.replace("os-selector-inactive", "os-selector-active");
 		}
@@ -50,7 +50,7 @@
 		<h2>This website doesn't use cookies!</h2>
 		<div class="service-grid">
 			<div class="service-grid-column" style="flex: 20%">
-				<button onclick="rdrctToPrivacy()" >Privacy Policy</button>
+				<button onclick="rdrctToPrivacy()">Privacy Policy</button>
 			</div>
 			<div class="service-grid-column" style="flex: 20%;">
 				<button onclick="closeCookies()">Cool!</button>
@@ -80,14 +80,15 @@
 		<div class="content">
 			<div class="os-header">
 				<p class="subheading" style="padding: 0; margin: 0.7em;">Select your operating system.</p>
-				<button class="os-selector-inactive" id="btn-windows" onclick="changeOS('windows')">Windows / MacOS®</button>
+				<button class="os-selector-inactive" id="btn-windows" onclick="changeOS('windows')">Windows /
+					MacOS®</button>
 				<!--<button class="os-selector-inactive" id="btn-macos" onclick="changeOS('macos')">MacOS®</button>-->
 				<button class="os-selector-inactive" id="btn-ios" onclick="changeOS('ios')">iOS / iPadOS®</button>
 				<button class="os-selector-inactive" id="btn-android" onclick="changeOS('android')">Android™</button>
 			</div>
 
 			<!-- WINDOWS / MAC -->
-			<div class="os-support" id="windows">		
+			<div class="os-support" id="windows">
 				<div class="section-text">
 					<h1>General Troubleshooting</h1>
 					<p>If you are having problems with our software, you can try one of the following. These will be
@@ -121,51 +122,7 @@
 					</ol>
 				</div>
 
-				<div class="section-text">
-					<p class="subheading">Still having trouble? Get in touch with us at <a
-							href="mailto:support@blueloch.co.uk" class="intext-link">support@blueloch.co.uk</a>.</p>
-				</div>
-			</div>
 
-			<!-- MACOS -->
-			<div class="os-support" id="macos">
-				<div class="section-text">
-					<h1>General Troubleshooting</h1>
-					<p>If you are having problems with our software, you can try one of the following. These will be
-						most
-						effective against performance issues, but may resolve other problems too.</p>
-
-					<ol>
-						<li>
-							<h3>Restart the Software</h3>
-							<p>Sometimes when software has been running for a while it can clog up your device's
-								resources.
-								Closing the software and re-opening it can resolve this.</p>
-						</li>
-
-						<li>
-							<h3>Close Other Apps</h3>
-							<p>If your device is running into performance issues, try closing any programs running in
-								the
-								background.
-								Programs running in the background can use up your device's resources slowing down the
-								ones
-								you are trying to use.</p>
-						</li>
-
-						<li>
-							<h3>Restart your Device</h3>
-							<p>As you use your device, it uses up its resources causing it to slow down over time.
-								Restarting your device can help clear out its resources and get your software running
-								smoothly again.</p>
-						</li>
-					</ol>
-				</div>
-
-				<div class="section-text">
-					<p class="subheading">Still having trouble? Get in touch with us at <a
-							href="mailto:support@blueloch.co.uk" class="intext-link">support@blueloch.co.uk</a>.</p>
-				</div>
 			</div>
 
 			<!-- IOS / IPADOS -->
@@ -226,10 +183,7 @@
 					<p></p>
 				</div>
 
-				<div class="section-text">
-					<p class="subheading">Still having trouble? Get in touch with us at <a
-							href="mailto:support@blueloch.co.uk" class="intext-link">support@blueloch.co.uk</a>.</p>
-				</div>
+
 			</div>
 
 			<!-- ANDROID -->
@@ -294,20 +248,39 @@
 					<p></p>
 				</div>
 
-				<div class="section-text">
-					<p class="subheading">Still having trouble? Get in touch with us at <a
-							href="mailto:support@blueloch.co.uk" class="intext-link">support@blueloch.co.uk</a>.</p>
-				</div>
+
 			</div>
 
 			<br>
+
+			<div class="section-text">
+				<p class="subheading" style="padding: 0; margin: 0.7em;">Or select the app you need help with.</p>
+
+				<div class="service-grid">
+					<div class="service-grid-column">
+						<a href="/pages/support/support_redagile.html">
+							<img src="/images/support/redagile/redagile.svg" class="hoverable support-tab"
+								style="max-width: 250px; padding: 20px; background-color: #c0c6d3;">
+						</a>
+
+					</div>
+				</div>
+
+				<p></p>
+			</div>
+
+			<div class="section-text">
+				<p class="subheading">Still having trouble? Get in touch with us at <a
+						href="mailto:support@blueloch.co.uk" class="intext-link">support@blueloch.co.uk</a>.</p>
+			</div>
 		</div>
 		<hr>
-			<p style="text-align: center; font-size: 0.7em;">BlueLoch Software Solutions Ltd. | <a class="intext-link"
-					href="https://find-and-update.company-information.service.gov.uk/company/SC776047">No:
-					SC776047</a> | <a href="/pages/legal.html" class="intext-link">Legal</a><br>Copyright ©
-				<script>document.write(new Date().getFullYear())</script>
-			</p>
+		<p style="text-align: center; font-size: 0.7em;">BlueLoch Software Solutions Ltd. | <a class="intext-link"
+				href="https://find-and-update.company-information.service.gov.uk/company/SC776047">No:
+				SC776047</a><br><a href="/pages/legal.html" class="intext-link">Legal</a> | <a
+				href="/pages/privacy/privacy_policy.html" class="intext-link">Privacy</a><br>Copyright ©
+			<script>document.write(new Date().getFullYear())</script>
+		</p>
 	</div>
 </body>
 

@@ -90,5 +90,5 @@ function closeCookies() {
 
 function rdrctToPrivacy() {
     localStorage.setItem("cookiesSeen", "yes");
-    window.location.href = "/pages/privacy_policy.html";
+    window.location.href = "/pages/privacy/privacy_policy.html";
 }

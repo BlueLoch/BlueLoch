@@ -68,97 +68,25 @@
 			<div class="section-text">
 				<h2>Products and Apps</h2>
 				<p>At this time, none of the products and applications we have developed collect data on their users.
-					Therefore, we do not use or sell your data in any form.
+					Therefore, we do not use or sell your data in any form. If the application you are using is
+					developed for another company, we cannot guarantee their other resources will not collect your data.
+					Please refer to the relevant privacy policy for information on that resource.
 				</p>
 			</div>
 
 			<div class="section-text">
-				<p class="subheading">If you have any questions, please do not hesitate to contact us at <a href="mailto:support@blueloch.co.uk" class="intext-link">support@blueloch.co.uk</a>.</p>
+				<p class="subheading">If you have any questions, you can contact us at <a
+						href="mailto:support@blueloch.co.uk" class="intext-link">support@blueloch.co.uk</a>.</p>
 			</div>
 
 			<hr>
 			<p style="text-align: center; font-size: 0.7em;">BlueLoch Software Solutions Ltd. | <a class="intext-link"
 					href="https://find-and-update.company-information.service.gov.uk/company/SC776047">No:
-					SC776047</a> | <a href="/pages/legal.html" class="intext-link">Legal</a><br>Copyright ©
+					SC776047</a><br><a href="/pages/legal.html" class="intext-link">Legal</a> | <a
+					href="/pages/privacy/privacy_policy.html" class="intext-link">Privacy</a><br>Copyright ©
 				<script>document.write(new Date().getFullYear())</script>
 			</p>
 		</div>
-
-		<!--
-	<script>
-		//update this with your js_form selector
-		var form_id_js = "form-input";
-
-		var data_js = {
-			"access_token": "vqdq7mz07bsl3n6kfdflp28h"
-		};
-
-		function js_onSuccess() {
-			alert("Your message was sent successfully.");
-		}
-
-		function js_onError(error) {
-			alert("Your message failed to send.");
-		}
-
-		var sendButton = document.getElementById("js_send");
-
-		function js_send() {
-			var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
-			var message = document.querySelector("#" + form_id_js + " [name='text']").value;
-			var email = document.querySelector("#" + form_id_js + " [name='reply_to']").value;
-			var name = document.querySelector("#" + form_id_js + " [name='name']").value;
-
-			if (subject != "" && message != "" && email != "" && name != "") {
-				data_js['reply_to'] = email;
-				data_js['subject'] = subject + " | Via blueloch.co.uk";
-				data_js['text'] = "Sender: " + name + "\r\nEmail: " + email + "\r\nMessage:\r\n" + message;
-
-				var params = toParams(data_js);
-
-				var request = new XMLHttpRequest();
-				request.open("POST", "https://postmail.invotes.com/send", true);
-				request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-				request.send(params);
-
-				sendButton.value = 'Sending…';
-				sendButton.disabled = true;
-				var request = new XMLHttpRequest();
-				request.onreadystatechange = function () {
-					if (request.readyState == 4 && request.status == 200) {
-						js_onSuccess();
-					} else
-						if (request.readyState == 4) {
-							js_onError(request.response);
-						}
-				};
-
-				let newEl = '<p class="subheading">Your message has been sent. We\'ll get back to you as soon as possible.</p>';
-				document.getElementById("replaceable").outerHTML = newEl;
-			} else {
-				alert("Please fill in all required fields.");
-			}
-
-			return false;
-		}
-
-		sendButton.onclick = js_send;
-
-		function toParams(data_js) {
-			var form_data = [];
-			for (var key in data_js) {
-				form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
-			}
-
-			return form_data.join("&");
-		}
-
-		var js_form = document.getElementById(form_id_js);
-		js_form.addEventListener("submit", function (e) {
-			e.preventDefault();
-		});
-	</script>-->
 </body>
 
 </html>
