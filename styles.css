@@ -461,12 +461,6 @@ h1 {
     margin-bottom: 5px;
 }
 
-.support-tab {
-    background-color: var(--background);
-    height: 100px;
-    padding: 20px;
-}
-
 .process-list li {
     padding: 5px;
     margin: 5px;

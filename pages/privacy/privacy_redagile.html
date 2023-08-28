@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BlueLoch | Privacy Policy</title>
+
+	<!-- Link Preview MetaData -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://blueloch.co.uk/" />
+	<meta property="og:title" content="BlueLoch | Contact Us" />
+	<meta property="og:description" content="BlueLoch develops and sells software that suits your business needs." />
+	<meta property="og:image" content="https://blueloch.co.uk/images/logos/BlueLochLogo-LightMode.png" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="/images/logos/BlueLochNessy.png" />
+	<link rel="stylesheet" href="/styles.css" />
+	<script src="/scripts/sidebar.js"></script>
+</head>
+
+<body onload="setSidebarStatus()" onresize="setSidebarStatus()">
+	<div id="splash">
+		<img src="/images/logos/BlueLochLogo-LightMode.png"
+			style="max-width: 80%; margin-top: 100px; max-height: 500px;">
+		<div class="progressBar"></div>
+		<p>Loading...</p>
+	</div>
+
+	<div id="cookies">
+		<h2>This website doesn't use cookies!</h2>
+		<div class="service-grid">
+			<div class="service-grid-column" style="flex: 20%">
+				<button onclick="rdrctToPrivacy()">Privacy Policy</button>
+			</div>
+			<div class="service-grid-column" style="flex: 20%;">
+				<button onclick="closeCookies()">Cool!</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="sidebar" class="sidebar-animated">
+		<a href="/index.html">
+			<img id="sidebar-logo" src="/images/logos/BlueLochText-DarkMode.png">
+		</a>
+
+		<div class="sidebar-list">
+			<a href="/index.html" class="sidebar-link">Home</a>
+			<!--<a href="/pages/about.html" class="sidebar-link">About&nbsp;us</a>-->
+			<a href="/pages/contact.html" class="sidebar-link">Contact&nbsp;us</a>
+			<a href="/pages/support/support_hub.html" class="sidebar-link">Support</a>
+		</div>
+	</div>
+
+	<span id="openside" class="stick summon" onclick="openSidebar()">►</span>
+
+	<div id="page">
+		<h1 class="head-content">Privacy Policy</h1>
+		<hr>
+
+		<div class="content">
+			<div class="section-text">
+				<h2>Cookies</h2>
+				<p>BlueLoch is a company dedicated to the privacy of our customers and clients. That's why our website
+					does not use cookies. Our website does not gather data on anything you do whilst visiting.
+					Therefore, we do not use or sell your data in any form.</p>
+			</div>
+
+			<div class="section-text">
+				<h2>Products and Apps</h2>
+				<p>At this time, none of the products and applications we have developed collect data on their users.
+					Therefore, we do not use or sell your data in any form.
+				</p>
+			</div>
+
+			<div class="section-text">
+				<p class="subheading">If you have any questions, please do not hesitate to contact us at <a
+						href="mailto:support@blueloch.co.uk" class="intext-link">support@blueloch.co.uk</a>.</p>
+			</div>
+
+			<hr>
+			<p style="text-align: center; font-size: 0.7em;">BlueLoch Software Solutions Ltd. | <a class="intext-link"
+				href="https://find-and-update.company-information.service.gov.uk/company/SC776047">No:
+				SC776047</a><br><a href="/pages/legal.html" class="intext-link">Legal</a> | <a href="/pages/privacy/privacy_policy.html" class="intext-link">Privacy</a><br>Copyright ©
+			<script>document.write(new Date().getFullYear())</script>
+		</p>
+		</div>
+</body>
+
+</html>
