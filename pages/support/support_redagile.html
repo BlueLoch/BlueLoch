@@ -9,7 +9,7 @@
 	<meta property="og:url" content="https://blueloch.co.uk/" />
 	<meta property="og:title" content="BlueLoch Software Solutions" />
 	<meta property="og:description" content="BlueLoch develops and sells software that suits your business needs." />
-	<meta property="og:image" content="https://blueloch.co.uk/images/logos/BlueLochLogo-LightMode.png" />
+	<meta property="og:image" content="https://blueloch.co.uk/images/logos/logo_black.svg" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -39,8 +39,8 @@
 
 <body onload="setSidebarStatus()" onresize="setSidebarStatus()">
 	<div id="splash">
-		<img src="/images/logos/BlueLochLogo-LightMode.png"
-			style="max-width: 80%; margin-top: 100px; max-height: 500px;">
+		<img src="/images/logos/logo_black.svg" style="max-width: 80%; margin-top: 100px; max-height: 500px;">
+		<p></p>
 		<div class="progressBar"></div>
 		<p>Loading...</p>
 	</div>
@@ -59,12 +59,12 @@
 
 	<div id="sidebar" class="sidebar-animated">
 		<a href="/index.html">
-			<img id="sidebar-logo" src="/images/logos/BlueLochText-DarkMode.png">
+			<img id="sidebar-logo" src="/images/logos/text_white.svg">
 		</a>
 
 		<div class="sidebar-list">
 			<a href="/index.html" class="sidebar-link">Home</a>
-			<!--<a href="/pages/about.html" class="sidebar-link">About&nbsp;us</a>-->
+			<a href="/pages/about.html" class="sidebar-link">About&nbsp;us</a>
 			<a href="/pages/contact.html" class="sidebar-link">Contact&nbsp;us</a>
 			<a href="/pages/support/support_hub.html" class="sidebar-link">Support</a>
 		</div>
@@ -74,7 +74,7 @@
 
 	<div id="page">
 		<div class="head-content">
-			<img src="/images/support/redagile/redagile.svg" loading="lazy">
+			<img src="/images/support/redagile/redagile.svg" loading="lazy" alt="RedAgile">
 		</div>
 		<hr>
 
@@ -86,7 +86,7 @@
 							<h2>About</h2>
 							<h3>RedAgile</h3>
 							<p>
-								RedAgile is an award winning agile training and consulting business that host a wide
+								RedAgile is an award winning agile training and consulting business who host a wide
 								variety
 								of courses to expand the capabilities of project managers and software development teams
 								across
@@ -111,15 +111,15 @@
 
 			<div class="section-text">
 				<h2>How to Use</h2>
-				<h3>Installation</h3>
-				<p>The RedAgile mobile app is supported by most phone devices. This includes
-					devices running Apple iOS 11 and
-					higher, or Android 5.0 and higher. To install, follow the instructions for your device's operating
-					system.</p>
-
-
 				<div class="section-inner">
-					<div class="os-header" style="text-align: center; background-color: inherit;">
+					<h3>Installation</h3>
+					<p>The RedAgile mobile app is supported by most phone devices. This includes
+						devices running Apple iOS 11 and
+						higher, or Android 11 and higher. To install, follow the instructions for your device's
+						operating
+						system.</p>
+
+					<div class="os-header" style="text-align: center; background-color: inherit; margin-top: -10px;">
 						<button class="os-selector-inactive" id="btn-android"
 							onclick="changeOS('android')">Android™</button>
 						<button class="os-selector-inactive" id="btn-ios" onclick="changeOS('ios')">iOS /
@@ -127,8 +127,9 @@
 					</div>
 
 					<div class="os-support" id="android" style="background-color: #c0c6d3;">
-						<h3>Android™</h3>
-						<p>These instructions are for devices running Android™. This includes devices manufactured by
+						<hr style="border: #2c2c2c 1px solid;">
+						<p>These instructions are for devices running <b>Android™</b>. This includes devices
+							manufactured by
 							Google, Samsung,
 							Huawei, Sony and others.</p>
 						<ol>
@@ -143,8 +144,9 @@
 					</div>
 
 					<div class="os-support" id="ios" style="background-color: #c0c6d3;">
-						<h3>iOS / iPadOS®</h3>
-						<p>These are instructions for devices running iOS or iPadOS®. These are devices manufactured by
+						<hr style="border: #2c2c2c 1px solid;">
+						<p>These are instructions for devices running <b>iOS</b> or <b>iPadOS®</b>. These are devices
+							manufactured by
 							Apple.</p>
 						<ol>
 							<li>On your device, navigate to the App Store and open it.</li>
@@ -159,44 +161,60 @@
 					</div>
 				</div>
 
+				<br>
+
+				<div class="section-inner">
+					<h3>Using the App</h3>
+					<p>When you open the app you will be presented with the Planning Poker
+						exercise. To use this exercise,
+						tap the numbers and a card will appear displaying the number in the centre of your screen.<br>
+						If you wish to view contact details for RedAgile, you can click the <mark
+							style="border-radius: 7px; background-color: white; padding: 5px; color: #bf1e2e; font-weight: bolder; font-family: sans-serif; letter-spacing: 0px;">RedAgile</mark>
+						button in
+						the
+						top-right of the screen.
+					</p>
+
+					<div style="text-align: center;">
+						<img src="/images/support/redagile/planning-poker.png"
+							style="max-width: 300px; height: 400px; margin: 10px; border: solid 2px #2c2c2c; border-radius: 10px;"
+							loading="lazy">
+						<img src="/images/support/redagile/poker-popup.png"
+							style="max-width: 300px; height: 400px; margin: 10px; border: solid 2px #2c2c2c; border-radius: 10px;"
+							loading="lazy">
+						<img src="/images/support/redagile/contact.png"
+							style="max-width: 300px; height: 400px; margin: 10px; border: solid 2px #2c2c2c; border-radius: 10px;"
+							loading="lazy">
+					</div>
+				</div>
 
 				<br>
 
-				<h3>Using the App</h3>
-				<p>When you open the app you will be presented with the Planning Poker
-					exercise. To use this exercise,
-					tap the numbers and a card will appear displaying the number in the centre of your screen.<br>
-					If you wish to view contact details for RedAgile, you can click the white "RedAgile" button in the
-					top-right of the screen.
-				</p>
-
-				<div style="text-align: center;">
-					<img src="/images/support/redagile/planning-poker.png"
-						style="max-width: 300px; height: 400px; margin: 10px;" loading="lazy">
-					<img src="/images/support/redagile/poker-popup.png"
-						style="max-width: 300px; height: 400px; margin: 10px;" loading="lazy">
-					<img src="/images/support/redagile/contact.png"
-						style="max-width: 300px; height: 400px; margin: 10px;" loading="lazy">
+				<div class="section-inner">
+					<h3>Accessibility</h3>
+					<p>The RedAgile app supports various accessibility features standard on modern apps. These include
+						light and dark modes, and text scaling to device preferences.</p>
 				</div>
 
+				<br>
 			</div>
 
 			<div class="section-text">
 				<h2>Known Issues</h2>
-				<p>These are issues we are currently aware of with the RedAgile app.</p>
+				<p>If you find something you believe is a bug, and it isn't listed below, let us know at <a
+						href="mailto:support@blueloch.co.uk" class="intext-link">support@blueloch.co.uk</a>. These are
+					issues we are currently aware of with the RedAgile app:</p>
 				<ul>
 					<li>On iOS 16.4, the app's splash screen may not display. This is an iOS issue.</li>
 				</ul>
-				<p>If you find something you believe is a bug, and it isn't listed here, let us know at <a href="mailto:support@blueloch.co.uk"
-						class="intext-link">support@blueloch.co.uk</a>.</p>
 			</div>
 
 			<div class="section-text">
 				<h2>Privacy Policy</h2>
 				<p>The RedAgile app does not collect data on its users or its usage. This may not be the same across
-					other RedAgile resources. Please refer to the <a href="https://redagile.com"
-						class="intext-link">RedAgile website</a> for specific information on other resources. If you
-					have further questions regarding the RedAgile app's usage, please contact us at <a
+					other RedAgile resources. Please contact RedAgile for specific information on other resources. If
+					you
+					have further questions regarding the RedAgile app, please contact us at <a
 						href="mailto:support@blueloch.co.uk" class="intext-link">support@blueloch.co.uk</a>.</p>
 			</div>
 		</div>
