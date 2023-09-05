@@ -13,3 +13,4 @@ The website will not function correctly if the raw HTML is loaded in a web brows
 This is a list of all the improvements and next steps that need to be made for the website to look good.
 
 - Scaling for 4k and up
+- SEO
