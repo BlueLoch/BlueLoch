@@ -550,7 +550,18 @@ h1 {
 @media only screen and (min-width: 2000px) {
     p {
         font-size: 1.5em;
+    }
 
+    .flip-card {
+        width: 350px;
+    }
+
+    .biotab {
+        max-width: 350px;
+    }
+
+    .biotab p {
+        font-size: 1.3em;
     }
 
     h3 {
