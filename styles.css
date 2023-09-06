@@ -4,6 +4,16 @@
     src: url(/fonts/Metropolis-Regular.otf);
 }
 
+@font-face {
+    font-family: Mono45Headline-Light;
+    src: url(/fonts/Mono45Headline-Light.ttf);
+}
+
+@font-face {
+    font-family: Mono45Headline-Bold;
+    src: url(/fonts/Mono45Headline-Bold.ttf);
+}
+
 :root {
     --background: #dadee6;
     --backgroundsecondary: #cdd4e2;
