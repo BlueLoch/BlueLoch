@@ -267,7 +267,6 @@ h1 {
     left: 0;
     max-width: 200px;
     margin: auto;
-
 }
 
 .sidebar-list {
@@ -517,11 +516,11 @@ h1 {
 
 .sitemap-list {
     padding: 5px;
-    list-style: none;
+    list-style-type: "»";
 }
 
 .sitemap-list ul {
-    list-style: none;
+    list-style-type: "»";
     margin-left: -1em;
 }
 
