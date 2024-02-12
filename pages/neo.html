@@ -28,6 +28,20 @@
 			font-size: 1.4rem;
 		}
 	</style>
+
+	<script>
+		function pickSurvey() {
+			let forms = [
+				"form1",
+				"form2",
+				"form3",
+				"form4",
+				"form5"
+			]
+			let form = forms[Math.floor(Math.random() * forms.length)];
+			console.log(form);
+		}
+	</script>
 </head>
 
 <body onload="setSidebarStatus()" onresize="setSidebarStatus()">
@@ -74,42 +88,23 @@
 			<div class="section-text">
 				<h2>Hello!</h2>
 				<p>
-					Hello, and thank you for taking an interest in the redesign of our website. Don't worry, this isn't
-					it; you're still on the old site. We are currently running a testing program to help us identify
-					issues in functionality, accessibility, and the overall feeling of the site.
-					<br><br>
-					All you need to take part is a device with an internet connection. When ready, clicking the "Start
-					Testing" button below will download a PDF to your device. This PDF contains instructions on how to
-					go about testing the site.
+					Hello, and thank you for taking an interest in the redesign of our website. We are currently running
+					a testing program to help us identify issues in functionality, accessibility, and the overall
+					feel of the site. All you need is a device with an internet connection.
 				</p>
 			</div>
 
 			<div class="section-text">
 				<h2>What to expect</h2>
-				<h3>Testing Guide</h3>
 				<p>
-					When you start, you will be provided with a PDF which contains instructions on how to carry out the
-					testing effectively. This includes information on how to get to the new site, and a number of basic
-					tasks we would like you to complete. Please follow the instructions carefully!
+					When you click the "Start Testing" button below, you will be taken to a Google Form which will guide
+					you through the testing process. The Form consists of 25 questions related to your general opinion
+					of the website, and to some tasks which you will be asked to complete. The process should take a
+					maximum of 10 minutes to complete.
 				</p>
 
-				<h3>Survey</h3>
-				<p>
-					Alongside completing the tasks, you will be asked to complete sections of a survey to which you can
-					find a link to in the PDF. The PDF will tell you exactly when to complete relevant sections.
-					Please don't skip ahead as this may have an impact on the results of the testing.
-				</p>
-
-				<h3>Website</h3>
-				<p>
-					Similarly to the survey, the testing manual will contain a link to the new website. Please only
-					access areas of the site when asked to do so by the PDF.
-				</p>
-			</div>
-
-			<div class="section-text">
-				<h2>Ready to go?</h2>
-				<a href="/Website Testing Manual.pdf" download class="testing-button">Start Testing</a>
+				<h3 style="text-align: center;">Ready to go?</h3>
+				<button onclick="pickSurvey()" class="testing-button">Start Testing</button>
 			</div>
 
 			<div class="section-text">
@@ -121,8 +116,8 @@
 
 					When you load into the site, it will check your
 					browser's theme settings to determine if you prefer light or dark mode. However, this data is
-					discarded immediately and the website will manage your preference internally for the remainder of the
-					session.<br><br>
+					discarded immediately and the website will manage your preference internally for the remainder of
+					the session.<br><br>
 
 					In the same way, the website will store whether or not you have seen the cookie pop-up so it does
 					not have to show it to you on every page. This data will be discarded at the end of the session.
@@ -137,11 +132,9 @@
 					data. You can view Google's privacy policy <a class="intext-link"
 						href="https://policies.google.com/privacy" target="_blank">here</a>.<br><br>
 
-					The survey will ask you if you have any physical or mental health conditions which may affect how
-					you view or interpret the site. This is to help us improve the accessibility of the new site. As
-					this data is not linked with any other identifying data, it is classed as anonymous medical research data
-					under GDPR. However, if you are not comfortable with providing this information, you can
-					skip this question altogether.
+					The survey asks if you have a disability as defined by the UK Equality Act 2010. You can choose not
+					to answer this question. We ask this as it helps us identify where there may be accessibility issues
+					with the website.
 				</p>
 			</div>
 
