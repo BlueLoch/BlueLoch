@@ -22,6 +22,29 @@
     --fontlight: #eaeaea;
 }
 
+.testing-button {
+    text-align: center;
+    position: relative;
+    display: block;
+    transition: 0.3s;
+    background-color: #005EB8;
+    color: var(--fontlight);
+    cursor: pointer;
+    border: none;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: Metropolis;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    width: 30%;
+    font-size: 1.4rem;
+}
+
+.testing-button:hover {
+    background-color: #007aed;
+}
+
 /*#region UNIVERSAL STYLING*/
 html,
 body {
