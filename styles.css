@@ -8,8 +8,6 @@
     src: url(/resources/fonts/Mono45Headline-Light.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
 :root {
     --blblue: hsl(209, 100%, 36%);
     --blblue2: hsl(209, 100%, 56%);
