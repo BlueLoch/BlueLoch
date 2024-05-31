@@ -25,9 +25,24 @@
     <!-- Resource Links -->
     <link rel="icon" href="/resources/images/logos/Nessy-blue.png" />
     <link rel="stylesheet" href="/styles.css">
+
+    <script>
+        function fixFooter() {
+            let height = window.innerHeight;
+            let footer = document.getElementsByTagName('footer')[0];
+            let footerPos = footer.getBoundingClientRect().bottom;
+
+            if ((footerPos + 1) < height) {
+                footer.classList.add('sticky-footer');
+            }
+            else {
+                footer.classList.remove('sticky-footer');
+            }
+        }
+    </script>
 </head>
 
-<body id="docbod" onclick="">
+<body onload="fixFooter()" id="docbod" onclick="">
     <nav id="nav">
         <a class="nav-logo" href="/index.html">
             <img src="/resources/images/logos/Banner-white.png">
@@ -35,7 +50,7 @@
 
         <a class="nav-link" href="/index.html">Home</a>
         <a class="nav-link" href="/pages/about.html">About</a>
-        <!--<a class="nav-link" href="/pages/software/software.html">Software</a>-->
+        <!--<a class="nav-link nav-link-active" href="/pages/software/software.html">Software</a>-->
         <a class="nav-link" href="/pages/services.html">Services</a>
 
         <a class="nav-contact link-btn" href="/pages/contact.html">Contact&nbsp;us</a>
@@ -66,47 +81,18 @@
     </div>
 
     <div id="content">
-        <section class="s-grey">
-            <div class="s-content">
-                <h2>Our policy</h2>
-                <p>
-                    At BlueLoch Software Solutions, we take your privacy very seriously. As such, we aim to collect as
-                    little data on our customers and product users as possible.
-                </p>
-            </div>
-        </section>
-
-        <section class="s-white">
-            <div class="s-content">
-                <h2>Website</h2>
-                <p>
-                    This website (<a href="/index.html">blueloch.co.uk</a>) does not use cookies or other forms of data
-                    collection. As such, we do not collect, use or sell your data.
-                </p>
-            </div>
-        </section>
-
-        <section class="s-lgrey">
-            <div class="s-content">
-                <h2>Software</h2>
-                <p>
-                    At this time, no products and applications we have developed collect data on their users.
-                    As such, we do not collect, use or sell your data. If the application you are using is developed for
-                    another company, we cannot guarantee their other resources will not collect your data. Please refer
-                    to the relevant privacy policy for information on that resource.
-                </p>
-            </div>
-        </section>
-
         <section class="s-transparent">
             <div class="s-content">
-                <h2>Enquiries</h2>
+                <h2>Site Index</h2>
                 <p>
-                    If you have any queries regarding our privacy policy, you can contact us at <a
-                        href="mailto:support@blueloch.co.uk">support@blueloch.co.uk</a>. Alternatively, you can contact
-                    our data protection officer, Alastair Kilgour, directly at <a
-                        href="mailto:alastair@blueloch.co.uk">alastair@blueloch.co.uk</a>.
+                    <a href="/index.html">Home</a><br>
+                    <a href="/pages/about.html">About</a><br>
+                    <a href="/pages/services.html">Services</a><br>
+                    <a href="/pages/contact.html">Contact</a><br>
+                    <a href="/pages/legal.html">Legal</a><br>
+                    <a href="/pages/privacy/privacy_policy.html">Privacy</a><br>
                 </p>
+
             </div>
         </section>
 

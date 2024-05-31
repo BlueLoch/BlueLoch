@@ -1,162 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick>
 
 <head>
-	<title>BlueLoch | Home</title>
+    <!-- Compatibility and Scaling MetaData -->
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<!-- Link Preview MetaData -->
-	<meta name="og:type" property="og:type" content="website" />
-	<meta name="og:url" property="og:url" content="https://blueloch.co.uk/" />
-	<meta name="og:title" property="og:title" content="BlueLoch | Home" />
-	<meta name="og:description" property="og:description" content="BlueLoch is a Glasgow based company that develops and sells high-quality software solutions tailored to your needs.">
-	<meta name="og:image" property="og:image" content="https://blueloch.co.uk/images/logos/BlueLochNessy.png">
+    <!-- SEO MetaData -->
+    <meta name="description" property="description"
+        content="BlueLoch is a software development company based in Glasgow. We develop all kinds of software for personal and business use.">
 
-	<meta name="description" property="description" content="BlueLoch develops and sells high-quality software solutions tailored to your needs.">
+    <!-- Link Preview MetaData -->
+    <meta name="og:type" property="og:type" content="website" />
+    <meta name="og:url" property="og:url" content="https://blueloch.co.uk/index.html" />
+    <meta name="og:title" property="og:title" content="BlueLoch Software Solutions" />
+    <meta name="og:description" property="og:description"
+        content="BlueLoch is a software development company based in Glasgow. We develop all kinds of software for personal and business use.">
+    <meta name="og:image" property="og:image" content="https://blueloch.co.uk/resources/images/logos/Nessy-blue.png">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Data -->
+    <title>Welcome to BlueLoch</title>
 
-	<link rel="icon" href="/images/logos/BlueLochNessy.png" />
-	<link rel="stylesheet" href="/styles.css" />
-	<script src="/scripts/sidebar.js"></script>
+    <!-- Resource Links -->
+    <link rel="icon" href="/resources/images/logos/Nessy-blue.png" />
+    <link rel="stylesheet" href="/styles.css">
 
-	<link rel="canonical" href="https://blueloch.co.uk/index.html">
+    <script>
+        function fixBanner() {
+            var container = document.getElementById("banner");
+            var content = container.innerHTML;
+            container.innerHTML= content; 
+            console.log("Refreshed"); 
+        }
+    </script>
 </head>
 
-<body onload="setSidebarStatus()" onresize="setSidebarStatus()">
-	<div id="splash">
-		<img src="/images/logos/logo_black.png"
-			style="max-width: 80%; margin-top: 100px; max-height: 500px;" alt="splash screen">
-		<p></p>
-		<div class="progressBar"></div>
-		<p style="font-weight: bold;">Loading...</p>
-	</div>
+<body id="docbod" onresize="fixBanner()" onclick="">
+    <nav id="nav">
+        <a class="nav-logo" href="/index.html">
+            <img src="/resources/images/logos/Banner-white.png">
+        </a>
 
-	<div id="cookies">
-		<h2>This website doesn't use cookies!</h2>
-		<div class="service-grid">
-			<div class="service-grid-column" style="flex: 20%">
-				<button onclick="rdrctToPrivacy()" >Privacy Policy</button>
-			</div>
-			<div class="service-grid-column" style="flex: 20%;">
-				<button onclick="closeCookies()">Cool!</button>
-			</div>
-		</div>
-	</div>
+        <a class="nav-link nav-link-active" href="/index.html">Home</a>
+        <a class="nav-link" href="/pages/about.html">About</a>
+        <!--<a class="nav-link" href="/pages/software/software.html">Software</a>-->
+        <a class="nav-link" href="/pages/services.html">Services</a>
 
-	<div id="sidebar" class="sidebar-animated">
-		<a href="/index.html">
-			<img id="sidebar-logo" src="/images/logos/text_white.png" alt="BlueLoch Software Solutions">
-		</a>
+        <a class="nav-contact link-btn" href="/pages/contact.html">Contact&nbsp;us</a>
+    </nav>
 
-		<div class="sidebar-list">
-			<a href="/index.html" class="sidebar-link">Home</a>
-			<a href="/pages/about.html" class="sidebar-link">About&nbsp;us</a>
-			<a href="/pages/contact.html" class="sidebar-link">Contact&nbsp;us</a>
-			<a href="/pages/support/support_hub.html" class="sidebar-link">Support</a>
-		</div>
-	</div>
+    <div class="hamburger-wrapper">
+        <label class="ham-label">
+            <input type="checkbox">
+            <span class="menu" id="ham-menu-to-delay"> <span class="hamburger"></span> </span>
+            <ul>
+                <li><img src="/resources/images/logos/Banner-white.png"></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/services.html">Services</a></li>
+                <!--<li><a href="/pages/software/software.html">Software</a></li>-->
+                <li><a href="/pages/contact.html">Contact&nbsp;us</a></li>
+                <hr>
+                <br>
+                <div class="ham-footer">
+                    <a href="https://find-and-update.company-information.service.gov.uk/company/SC776047">Company
+                        No. SC776047</a>
+                    <a href="/pages/legal.html">Legal</a>
+                    <a href="/pages/privacy/privacy_policy.html">Privacy</a>
+                    <a href="/pages/sitemap.html">Site&nbsp;Index</a>
+                </div>
+            </ul>
+        </label>
+    </div>
 
-	<span id="openside" class="stick summon" onclick="openSidebar()">►</span>
 
-	<div id="page">
-		<h1 class="head-content">Welcome</h1>
-		<hr>
+    <div class="index-banner" id="banner">
+        <img src="/resources/images/logos/Banner-white.png" alt="BlueLoch Software Solutions">
 
-		<div class="content">
-			<div class="section-text" style="border: #005EB8 5px solid;">
-				<h2 style="text-align: center; font-size: 3rem;">We're testing our new website!</h2>
-				<a href="/pages/neo.html" class="testing-button">Learn more</a>
-			</div>
+        <div class="scroller-wrapper">
+            <div class="scroller">
+                <div class="scroller-item">
+                    <div class="item-holder">
+                        <h2>Websites</h2>
+                        <p>Your dream website, or your company's web app, for all devices at all times of day</p>
+                    </div>
+                </div>
 
-			<div class="section-text">
-				<div class="service-grid" style="flex: fit-content;">
-					<div class="service-grid-column">
-						<p class="service-grid-text" style="text-align: justify;">
-							We are a software development and consultancy firm based in Glasgow, Scotland. Our mission
-							is
-							to help you get the high-quality software you need for yourself or your
-							business.<br><br>Whether
-							you need a website, app, or some assistance setting up Microsoft 365, we can help.</p>
-					</div>
-					<div class="service-grid-column">
-						<img src="/images/logos/logo_black.png" style="max-height: 300px;" loading="lazy" alt="blueloch logo">
-					</div>
-				</div>
-			</div>
+                <div class="scroller-item">
+                    <div class="item-holder">
+                        <h2>Apps</h2>
+                        <p>Mobile and desktop apps tailored to your personal or business needs</p>
+                    </div>
+                </div>
 
-			<div class="service-grid">
-				<div class="service-grid-column">
-					<a href="/pages/services/software.html"><img class="hoverable service-tab"
-							src="/images/homepage/custom.png" loading="lazy" alt="software solutions">
-					</a>
+                <div class="scroller-item">
+                    <div class="item-holder">
+                        <h2>Maintenance</h2>
+                        <p>Continuing support and maintenance for your software for as long as you need</p>
+                    </div>
+                </div>
+            </div>
 
-				</div>
-				<div class="service-grid-column">
-					<a href="/pages/services/consultancy.html"><img class="hoverable service-tab"
-							src="/images/homepage/other.png" loading="lazy" alt="consultancy services"></a>
-				</div>
-			</div>
+            <a class="link-btn" href="/pages/services.html">Find out more</a>
+        </div>
+    </div>
 
-			<div class="section-text">
-				<h2>Why choose us?</h2>
-				<p>At BlueLoch, we promise three things: <b>Quality</b>, <b>Inclusiveness</b> and <b>Innovation</b>.
-				</p>
+    <div id="content">
+        <section class="s-transparent">
+            <div class="s-content horizontal">
+                <div class="horizontal-text">
+                    <h2>Welcome!</h2>
+                    <p>
+                        We are BlueLoch Software Solutions, a Scotland-based software development company. Our
+                        mission is to help you get the high quality software you need, for yourself or your business,
+                        efficiently and at a good price.
+                    </p>
+                </div>
 
-				<div class="section-inner">
-					<h3>Quality</h3>
-					<p>How many times have you heard of, or even witnessed, a piece of faulty software causing problems
-						for a business? Your answer is probably 'too many'. We've also seen it too many times.
-						That's why we promise a high-quality end product. All of our software is extensively tested
-						before release. Plus, if we miss something, you can report it and we'll fix it at no extra
-						cost.</p>
-				</div>
+                <img src="/resources/images/logos/Nessy-black.png" id="nessie">
+            </div>
+        </section>
 
-				<br>
+        <section class="s-white">
+            <div class="s-content">
+                <h2>Why choose us?</h2>
+                <br>
+                <div class="value-card-holder">
+                    <div class="value-card">
+                        <img src="/resources/images/svgs/quality.svg">
+                        <h3>Quality</h3>
+                        <p>
+                            Every piece of software we produce is tested to a high standard. Even if we miss something,
+                            we'll be happy to fix it!
+                        </p>
+                    </div>
 
-				<div class="section-inner">
-					<h3>Inclusiveness</h3>
-					<p>In the not-so-distant past software companies would develop for clients using what was called the
-						"waterfall approach". They would develop the complete product for the client before getting
-						approval for it. Sure it worked sometimes, but what if the client wasn't happy with it? Projects
-						would face major delays and run far overbudget.<br><br>
+                    <div class="value-card">
+                        <img src="/resources/images/svgs/talking.svg">
+                        <h3>Inclusiveness</h3>
+                        <p>
+                            At every step of the development process, we get your feedback on what's already developed
+                            to make sure you're proud of your end-product.
+                        </p>
+                    </div>
 
-						At BlueLoch, we do things differently. We include you in the development process. From
-						interface mock-ups to features, everything must get your seal of approval before it is
-						integrated into the final product. If you aren't happy with something
-						we'll go back and fix it. You'll receive regular updates on our progress, and demos of parts of
-						the software as it is completed. That way, when it comes to the final product, you
-						can be confident it is exactly what you need.
-					</p>
-				</div>
+                    <div class="value-card">
+                        <img src="/resources/images/svgs/stopwatch.svg">
+                        <h3>Efficiency</h3>
+                        <p>
+                            We work around the clock to get your software developed for you as soon as possible cutting
+                            down
+                            on time and costs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<br>
+        <section class="s-grey">
+            <div class="s-content horizontal">
+                <div class="horizontal-text">
+                    <h2>Who are we?</h2>
+                    <p>
+                        BlueLoch was founded by four uni students who each share a passion for technology and software
+                        development. Each of us has studied computing for most of our lives giving us a strong pool of
+                        experience.
+                    </p>
+                    <br>
+                    <p style="text-align: center;"><a class="link-btn" href="/pages/about.html">Read more</a></p>
+                </div>
 
-				<div class="section-inner">
-					<h3>Innovation</h3>
-					<p>Since the invention of the first computer, there have been a lot of ways of developing software.
-						From wires plugged into boards, to today's modern frameworks and programming languages, the
-						world of computing has come far. Yet many companies refuse to embrace the latest
-						innovations.<br><br>
+                <img src="/resources/images/portraits/us.png">
 
-						At BlueLoch, we choose to use the latest and greatest frameworks to build your software. By
-						doing so we can develop applications for every major platform faster. That includes Windows,
-						MacOS®, Android™ and iOS. Plus, using modern frameworks ensures your software is
-						supported for many years to come.
-					</p>
-				</div>
+            </div>
+        </section>
 
-				<p></p>
-			</div>
-		</div>
-
-		<br>
-		<hr>
-		<p style="text-align: center; font-size: 0.7em;">BlueLoch Software Solutions Ltd. | <a class="intext-link"
-				href="https://find-and-update.company-information.service.gov.uk/company/SC776047">No:
-				SC776047</a><br><a href="/pages/legal.html" class="intext-link">Legal</a> | <a href="/pages/privacy/privacy_policy.html" class="intext-link">Privacy</a><br>Copyright ©
-			<script>document.write(new Date().getFullYear())</script>
-		</p>
-	</div>
+        <footer class="s-bluegrad">
+            <div class="horizontal">
+                <div class="horizontal-text">
+                    <p>
+                        BlueLoch Software Solutions Ltd.<br>
+                        <a href="https://find-and-update.company-information.service.gov.uk/company/SC776047">Company
+                            No. SC776047</a>
+                    </p>
+                </div>
+                <div class="horizontal-text">
+                    <p>
+                        <a href="/pages/legal.html">Legal</a> <span
+                            style="font-size: 0.5rem; vertical-align: middle; letter-spacing: -3px; margin-right: 2px;">◄►</span>
+                        <a href="/pages/privacy/privacy_policy.html">Privacy</a> <span
+                        style="font-size: 0.5rem; vertical-align: middle; letter-spacing: -3px; margin-right: 2px;">◄►</span>
+                        <a href="/pages/sitemap.html">Site&nbsp;Index</a><br>
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear())</script>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

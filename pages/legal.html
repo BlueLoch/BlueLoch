@@ -1,116 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick>
 
 <head>
-	<title>BlueLoch | Legal</title>
+    <!-- Compatibility and Scaling MetaData -->
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<!-- Link Preview MetaData -->
-	<meta name="og:type" property="og:type" content="website" />
-	<meta name="og:url" property="og:url" content="https://blueloch.co.uk/" />
-	<meta name="og:title" property="og:title" content="BlueLoch | Legal" />
-	<meta name="og:description" property="og:description" content="BlueLoch is a Glasgow based company that develops and sells high-quality software solutions tailored to your needs.">
-	<meta name="og:image" property="og:image" content="https://blueloch.co.uk/images/logos/BlueLochNessy.png">
+    <!-- SEO MetaData -->
+    <meta name="description" property="description"
+        content="BlueLoch is a software development company based in Glasgow. We develop all kinds of software for personal and business use.">
 
-	<meta name="description" content="BlueLoch develops and sells high-quality software solutions tailored to your needs.">
+    <!-- Link Preview MetaData -->
+    <meta name="og:type" property="og:type" content="website" />
+    <meta name="og:url" property="og:url" content="https://blueloch.co.uk/index.html" />
+    <meta name="og:title" property="og:title" content="BlueLoch Software Solutions" />
+    <meta name="og:description" property="og:description"
+        content="BlueLoch is a software development company based in Glasgow. We develop all kinds of software for personal and business use.">
+    <meta name="og:image" property="og:image" content="https://blueloch.co.uk/resources/images/logos/Nessy-blue.png">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Data -->
+    <title>Welcome to BlueLoch</title>
 
-	<link rel="icon" href="/images/logos/BlueLochNessy.png" />
-	<link rel="stylesheet" href="/styles.css" />
-	<script src="/scripts/sidebar.js"></script>
-	<link rel="canonical" href="https://blueloch.co.uk/index.html">
+    <!-- Resource Links -->
+    <link rel="icon" href="/resources/images/logos/Nessy-blue.png" />
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
-<body onload="setSidebarStatus()" onresize="setSidebarStatus()">
-	<div id="splash">
-		<img src="/images/logos/logo_black.png"
-			style="max-width: 80%; margin-top: 100px; max-height: 500px;" alt="splash screen">
-		<p></p>
-		<div class="progressBar"></div>
-		<p style="font-weight: bold;">Loading...</p>
-	</div>
+<body id="docbod" onclick="">
+    <nav id="nav">
+        <a class="nav-logo" href="/index.html">
+            <img src="/resources/images/logos/Banner-white.png">
+        </a>
 
-	<div id="cookies">
-		<h2>This website doesn't use cookies!</h2>
-		<div class="service-grid">
-			<div class="service-grid-column" style="flex: 20%">
-				<button onclick="rdrctToPrivacy()">Privacy Policy</button>
-			</div>
-			<div class="service-grid-column" style="flex: 20%;">
-				<button onclick="closeCookies()">Cool!</button>
-			</div>
-		</div>
-	</div>
+        <a class="nav-link" href="/index.html">Home</a>
+        <a class="nav-link" href="/pages/about.html">About</a>
+        <!--<a class="nav-link" href="/pages/software/software.html">Software</a>-->
+        <a class="nav-link" href="/pages/services.html">Services</a>
 
-	<div id="sidebar" class="sidebar-animated">
-		<a href="/index.html">
-			<img id="sidebar-logo" src="/images/logos/text_white.png" alt="BlueLoch Software Solutions">
-		</a>
+        <a class="nav-contact link-btn" href="/pages/contact.html">Contact&nbsp;us</a>
+    </nav>
 
-		<div class="sidebar-list">
-			<a href="/index.html" class="sidebar-link">Home</a>
-			<a href="/pages/about.html" class="sidebar-link">About&nbsp;us</a>
-			<a href="/pages/contact.html" class="sidebar-link">Contact&nbsp;us</a>
-			<a href="/pages/support/support_hub.html" class="sidebar-link">Support</a>
-		</div>
-	</div>
+    <div class="hamburger-wrapper">
+        <label class="ham-label">
+            <input type="checkbox">
+            <span class="menu" id="ham-menu-to-delay"> <span class="hamburger"></span> </span>
+            <ul>
+                <li><img src="/resources/images/logos/Banner-white.png"></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/services.html">Services</a></li>
+                <!--<li><a href="/pages/software/software.html">Software</a></li>-->
+                <li><a href="/pages/contact.html">Contact&nbsp;us</a></li>
+                <hr>
+                <br>
+                <div class="ham-footer">
+                    <a href="https://find-and-update.company-information.service.gov.uk/company/SC776047">Company
+                        No. SC776047</a>
+                    <a href="/pages/legal.html">Legal</a>
+                    <a href="/pages/privacy/privacy_policy.html">Privacy</a>
+                    <a href="/pages/sitemap.html">Site&nbsp;Index</a>
+                </div>
+            </ul>
+        </label>
+    </div>
 
-	<span id="openside" class="stick summon" onclick="openSidebar()">►</span>
+    <div id="content">
+        <section class="s-transparent">
+            <div class="s-content">
+                <h2>Company Registration</h2>
+                <p>
+                    BlueLoch Software Solutions Ltd. is a private limited company in Scotland, United Kingdom, with the
+                    company number SC776047, registered at the following address:
+                </p>
 
-	<div id="page">
-		<h1 class="head-content">Legal</h1>
-		<hr>
+                <br>
 
-		<div class="content">
-			<div class="section-text">
-				<p class="subheading">These are the legal details of BlueLoch Software Solutions Ltd.</p>
-				<p style="text-align: center;">Please contact us at <a href="mailto:contact@blueloch.co.uk"
-						class="intext-link">contact@blueloch.co.uk</a> if you have any enquiries.</p>
-			</div>
+                <p style="text-align: center;">
+                    272 Bath Street<br>
+                    Glasgow, Scotland<br>
+                    G2 4JR<br>
+                </p>
 
+                <br>
 
-			<div class="section-text">
-				<h2>Registration</h2>
-				<p>BlueLoch Software Solutions Ltd. is a registered company in Scotland with the company number
-					SC776047. The company is registered at the following address:<br><br>
+                <p>
+                    <b style="text-decoration: underline;">This is not a valid mailing address.</b>
+                    <br>If you wish to contact us via mail, please
+                    first contact us via email at <a href="mailto:contact@blueloch.co.uk">contact@blueloch.co.uk</a> and
+                    we will provide you with a mailing address
+                    if necessary.
+                </p>
+            </div>
+        </section>
 
-					272 Bath Street<br>
-					Glasgow, Scotland<br>
-					G2 4JR<br><br>
+        <section class="s-white">
+            <div class="s-content">
+                <h2>Artwork</h2>
+                <p>
+                    The BlueLoch Software Solutions <a href="/resources/images/logos/Logo-black.png">logo</a> and <a href="/resources/images/logos/Nessy-black.png">Nessie</a>, including their variations, are protected by
+                    the copyright laws of the United Kingdom as original artwork. As such, they may not be replicated,
+                    distributed or published without prior permission from BlueLoch Software Solutions Ltd.
+                </p>
+            </div>
+        </section>
 
-					Please note this is <strong>not</strong> a valid mailing address. If you need to contact us via
-					mail, please
-					first contact us via email at <a href="mailto:contact@blueloch.co.uk"
-						class="intext-link">contact@blueloch.co.uk</a>.
-				</p>
-			</div>
-
-			<div class="section-text">
-				<h2>Usage Rights</h2>
-				<p>As a registered company, the title "BlueLoch Software Solutions Ltd." may not be used as a trading
-					name by another person or entity.</p>
-
-				<p>The "BlueLoch Software Solutions" logo is protected by copyright. As
-					such, it may not be replicated, distributed or published without prior permission from BlueLoch
-					Software Solutions Ltd.<br>
-					Additionally the BlueLoch Nessie, and its variations, are protected by copyright. As
-					such, they may not be replicated, distributed or published without prior permission from BlueLoch
-					Software Solutions Ltd.
-				</p>
-
-				<div style="text-align: center;">
-					<img src="/images/logos/logo_black.png" style="max-height: 300px;" alt="blueloch logo">
-				</div>
-
-			</div>
-			<hr>
-			<p style="text-align: center; font-size: 0.7em;">BlueLoch Software Solutions Ltd. | <a class="intext-link"
-				href="https://find-and-update.company-information.service.gov.uk/company/SC776047">No:
-				SC776047</a><br><a href="/pages/legal.html" class="intext-link">Legal</a> | <a href="/pages/privacy/privacy_policy.html" class="intext-link">Privacy</a><br>Copyright ©
-			<script>document.write(new Date().getFullYear())</script>
-		</p>
-		</div>
-	</div>
+        <footer class="s-bluegrad">
+            <div class="horizontal">
+                <div class="horizontal-text">
+                    <p>
+                        BlueLoch Software Solutions Ltd.<br>
+                        <a href="https://find-and-update.company-information.service.gov.uk/company/SC776047">Company
+                            No. SC776047</a>
+                    </p>
+                </div>
+                <div class="horizontal-text">
+                    <p>
+                        <a href="/pages/legal.html">Legal</a> <span
+                            style="font-size: 0.5rem; vertical-align: middle; letter-spacing: -3px; margin-right: 2px;">◄►</span>
+                        <a href="/pages/privacy/privacy_policy.html">Privacy</a> <span
+                            style="font-size: 0.5rem; vertical-align: middle; letter-spacing: -3px; margin-right: 2px;">◄►</span>
+                        <a href="/pages/sitemap.html">Site&nbsp;Index</a><br>
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear())</script>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
