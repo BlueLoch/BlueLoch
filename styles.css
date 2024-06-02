@@ -378,6 +378,14 @@ section p {
     background: linear-gradient(90deg, rgba(31, 38, 50, 1) 0%, rgba(15, 46, 69, 1) 50%, rgba(27, 50, 60, 1) 100%);
 }
 
+.s-redagile {
+    background-color: #BE202E;
+}
+
+.s-redagile h2, .s-redagile p {
+    color: #DADEE6;
+}
+
 /* SIDE-BY-SIDE */
 .horizontal {
     display: flex;
@@ -629,6 +637,12 @@ footer .horizontal-text p {
 
 .value-card a img:hover {
     transform: scale(1.1);
+}
+
+/* MISC */
+.mobile-screenshot {
+    max-height: 25rem;
+    margin: 1rem;
 }
 
 @keyframes value-card-img-shake {
