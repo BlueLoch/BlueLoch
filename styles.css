@@ -31,6 +31,7 @@ body {
     color: var(--bltext);
     height: 100vh;
     background-color: var(--blback);
+    scroll-behavior: smooth;
 }
 
 /* NAVBAR */
@@ -337,7 +338,25 @@ section p {
     font-size: 1.4rem;
     line-height: 2rem;
     color: var(--bltext);
+}
+
+section :not(.accordion-item) p {
     padding-top: 1rem;
+}
+
+section ul li:not(.accordion-item),
+section ol li:not(.accordion-item) {
+    margin-inline: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--bltext);
+    padding-top: 1rem;
+    text-align: left;
+
+}
+
+section ul li:not(.accordion-item) {
+    list-style-type: square;
 }
 
 .s-content {
@@ -382,8 +401,22 @@ section p {
     background-color: #BE202E;
 }
 
-.s-redagile h2, .s-redagile p {
+.s-redagile h2,
+.s-redagile p,
+.s-redagile h3 {
     color: #DADEE6;
+}
+
+.s-redagile a {
+    color: var(--bltext) !important;
+}
+
+.s-redagile a::before {
+    background-color: var(--bltext) !important;
+}
+
+.s-feelsync {
+    background-color: #4DD0E1;
 }
 
 /* SIDE-BY-SIDE */
@@ -413,6 +446,14 @@ section p {
     max-width: 20rem;
     height: auto;
     min-height: 0rem;
+}
+
+.horizontal-text {
+    align-self: flex-start;
+}
+
+.accordion-item .horizontal-text {
+    align-self: center;
 }
 
 .horizontal-text p,
@@ -480,37 +521,42 @@ footer p {
 }
 
 footer a,
-p a:not(.link-btn, .link-btn-dark) {
+p a:not(.link-btn, .link-btn-dark),
+li a:not(.link-btn, .link-btn-dark, .accordion-item) {
     cursor: pointer;
     position: relative;
     transition: color 0.3s ease-in-out;
-    color: var(--blblue2);
+    color: var(--blblue);
     text-decoration: none;
 }
 
 footer a::before,
-p a:not(.link-btn, .link-btn-dark)::before {
+p a:not(.link-btn, .link-btn-dark)::before,
+a:not(.link-btn, .link-btn-dark)::before {
     content: '';
     position: absolute;
     top: 120%;
     width: 100%;
     height: 2px;
-    background-color: var(--blblue2);
+    background-color: var(--blblue);
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
-p a:not(.link-btn, .link-btn-dark)::before {
+p a:not(.link-btn, .link-btn-dark)::before,
+li a:not(.link-btn, .link-btn-dark, .accordion-item)::before {
     top: 100%;
-    background-color: var(--blblue);
+    background-color: var(--blblue2);
 }
 
-p a:not(.link-btn, .link-btn-dark):hover {
-    color: var(--blblue);
+p a:not(.link-btn, .link-btn-dark):hover,
+li a:not(.link-btn, .link-btn-dark, .accordion-item):hover {
+    color: var(--blblue2);
 }
 
 footer a:hover::before,
-p a:not(.link-btn, .link-btn-dark):hover::before {
+p a:not(.link-btn, .link-btn-dark):hover::before,
+li a:not(.link-btn, .link-btn-dark, .accordion-item):hover::before {
     transform: scaleX(1);
 }
 
@@ -677,6 +723,165 @@ footer .horizontal-text p {
     width: 100%;
 }
 
+/* FUNKY CARDS */
+
+
+.card-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.card-item {
+    flex-basis: 20rem;
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+    max-width: 80vw;
+}
+
+.card-item-link {
+    display: block;
+    padding: 1rem 20px;
+    background-color: #DADEE6;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-item-link:hover .card-item-bg {
+    transform: scale(6.2);
+}
+
+.card-item-title {
+    height: 6rem;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.card-item-title img,
+.card-item-title h2 {
+    max-width: 100%;
+    height: 100%;
+    padding: 1rem;
+    height: auto;
+}
+
+.card-item-bg {
+    height: 6rem;
+    width: 128px;
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    background-color: #005EB8;
+}
+
+
+/* HELP PAGES ACCORDION */
+.accordion {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion .accordion-item {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    border: solid rgba(0, 0, 0, 0.11);
+    border-width: 1px 1px 0 1px;
+    padding-inline: 1rem;
+}
+
+.accordion .accordion-item:nth-of-type(1) {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.accordion .accordion-item:last-of-type {
+    border-radius: 0 0 1rem 1rem;
+    border-width: 1px 1px 1px 1px;
+}
+
+.accordion .accordion-item i {
+    display: inline-block;
+    transform: translate(1rem, -1.2rem);
+}
+
+.accordion .accordion-item h3 {
+    display: inline;
+}
+
+.accordion .accordion-item i:before,
+.accordion .accordion-item i:after {
+    content: "";
+    position: absolute;
+    background-color: var(--blblue);
+    width: 6px;
+    height: 18px;
+}
+
+.accordion .accordion-item i:before {
+    transform: translate(-5px, 0) rotate(45deg);
+}
+
+.accordion .accordion-item i:after {
+    transform: translate(5px, 0) rotate(-45deg);
+}
+
+.accordion .accordion-item input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 4.5rem;
+    z-index: 1;
+    opacity: 0;
+    left: 0;
+    transform: translateY(-1rem);
+}
+
+.accordion .accordion-item input[type=checkbox]:checked~*:not(h3, i) {
+    margin-top: 0;
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion .accordion-item input[type=checkbox]:checked~i:before {
+    transform: translate(5px, 0) rotate(45deg);
+}
+
+.accordion .accordion-item input[type=checkbox]:checked~i:after {
+    transform: translate(-5px, 0) rotate(-45deg);
+}
+
+ol li {
+    list-style: decimal !important;
+}
+
+.page-contents-list {
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
 @media only screen and (max-width: 1400px) {
     .value-card {
         width: 100%;
@@ -696,7 +901,7 @@ footer .horizontal-text p {
     .s-content {
         width: 90%;
     }
-    
+
 
     .horizontal-text h2,
     .horizontal-text h3 {
@@ -724,6 +929,41 @@ footer .horizontal-text p {
 
     .horizontal-text p {
         text-align: center;
+    }
+
+    .ag-courses_item {
+        -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    }
+
+    .ag-courses-item_title {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .ag-format-container {
+        width: 96%;
+    }
+
+    .ag-courses_item {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .ag-courses-item_title {
+        min-height: 72px;
+        line-height: 1;
+
+        font-size: 24px;
+    }
+
+    .ag-courses-item_link {
+        padding: 22px 40px;
+    }
+
+    .ag-courses-item_date-box {
+        font-size: 16px;
     }
 }
 

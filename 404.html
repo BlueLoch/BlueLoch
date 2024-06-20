@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" onclick>
+
+<head>
+    <!-- Compatibility and Scaling MetaData -->
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- SEO MetaData -->
+    <meta name="description" property="description"
+        content="BlueLoch is a software development company based in Glasgow. We develop all kinds of software for personal and business use.">
+
+    <!-- Link Preview MetaData -->
+    <meta name="og:type" property="og:type" content="website" />
+    <meta name="og:url" property="og:url" content="https://blueloch.co.uk/index.html" />
+    <meta name="og:title" property="og:title" content="BlueLoch Software Solutions" />
+    <meta name="og:description" property="og:description"
+        content="BlueLoch is a software development company based in Glasgow. We develop all kinds of software for personal and business use.">
+    <meta name="og:image" property="og:image" content="https://blueloch.co.uk/resources/images/logos/Nessy-blue.png">
+
+    <!-- Page Data -->
+    <title>Welcome to BlueLoch</title>
+
+    <!-- Resource Links -->
+    <link rel="icon" href="/resources/images/logos/Nessy-blue.png" />
+    <link rel="stylesheet" href="/styles.css">
+
+    <script>
+        function fixFooter() {
+            let height = window.innerHeight;
+            let footer = document.getElementsByTagName('footer')[0];
+            let footerPos = footer.getBoundingClientRect().bottom;
+
+            if ((footerPos + 1) < height) {
+                footer.classList.add('sticky-footer');
+            }
+            else {
+                footer.classList.remove('sticky-footer');
+            }
+        }
+    </script>
+</head>
+
+<body onload="fixFooter()" id="docbod" onclick="">
+    <nav id="nav">
+        <a class="nav-logo" href="/index.html">
+            <img src="/resources/images/logos/Banner-white.png">
+        </a>
+
+        <a class="nav-link nav-link-active" href="/index.html">Home</a>
+        <a class="nav-link" href="/pages/about.html">About</a>
+        <!-- <a class="nav-link" href="/pages/software/software.html">Software</a> -->
+        <a class="nav-link" href="/pages/services.html">Services</a>
+
+        <a class="nav-contact link-btn" href="/pages/contact.html">Contact&nbsp;us</a>
+    </nav>
+
+    <div class="hamburger-wrapper">
+        <label class="ham-label">
+            <input type="checkbox">
+            <span class="menu" id="ham-menu-to-delay"> <span class="hamburger"></span> </span>
+            <ul>
+                <li><img src="/resources/images/logos/Banner-white.png"></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/services.html">Services</a></li>
+                <!-- <li><a href="/pages/software/software.html">Software</a></li> -->
+                <li><a href="/pages/contact.html">Contact&nbsp;us</a></li>
+                <hr>
+                <br>
+                <div class="ham-footer">
+                    <a href="https://find-and-update.company-information.service.gov.uk/company/SC776047">Company
+                        No. SC776047</a>
+                    <a href="/pages/legal.html">Legal</a>
+                    <a href="/pages/privacy/privacy_policy.html">Privacy</a>
+                    <a href="/pages/sitemap.html">Site&nbsp;Index</a>
+                </div>
+            </ul>
+        </label>
+    </div>
+
+    <div id="content">
+        <section class="s-transparent">
+            <div class="s-content">
+                <img style="max-width: 80%; width: 30rem; height: auto;" src="/resources/images/logos/Nessy-builder.png">
+                <h2 style="margin-top: 2rem;">Hmm... that page doesn't exist!</h2>
+            </div>
+        </section>
+    
+
+        <footer class="s-bluegrad">
+            <div class="horizontal">
+                <div class="horizontal-text">
+                    <p>
+                        BlueLoch Software Solutions Ltd.<br>
+                        <a href="https://find-and-update.company-information.service.gov.uk/company/SC776047">Company
+                            No. SC776047</a>
+                    </p>
+                </div>
+                <div class="horizontal-text">
+                    <p>
+                        <a href="/pages/legal.html">Legal</a> <span
+                            style="font-size: 0.5rem; vertical-align: middle; letter-spacing: -3px; margin-right: 2px;">◄►</span>
+                        <a href="/pages/privacy/privacy_policy.html">Privacy</a> <span
+                        style="font-size: 0.5rem; vertical-align: middle; letter-spacing: -3px; margin-right: 2px;">◄►</span>
+                        <a href="/pages/sitemap.html">Site&nbsp;Index</a><br>
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear())</script>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
