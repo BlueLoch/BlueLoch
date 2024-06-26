@@ -407,12 +407,12 @@ section ul li:not(.accordion-item) {
     color: #DADEE6;
 }
 
-.s-redagile a {
-    color: var(--bltext) !important;
+.s-redagile a, .s-redagile li {
+    color: #242424 !important;
 }
 
 .s-redagile a::before {
-    background-color: var(--bltext) !important;
+    background-color: #242424 !important;
 }
 
 .s-feelsync {
