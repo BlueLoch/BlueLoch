@@ -10,8 +10,43 @@
    </url>
 
    <url>
-      <loc>https://blueloch.co.uk/pages/privacy/privacy_policy.html</loc>
+      <loc>https://blueloch.co.uk/</loc>
       <lastmod>2024-04-24</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://blueloch.co.uk/pages/privacy/privacy_policy.html</loc>
+      <lastmod>2024-07-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://blueloch.co.uk/pages/privacy/redagile.html</loc>
+      <lastmod>2024-07-07</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://blueloch.co.uk/pages/privacy/feelsync.html</loc>
+      <lastmod>2024-07-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://blueloch.co.uk/pages/privacy/betas.html</loc>
+      <lastmod>2024-07-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://blueloch.co.uk/pages/privacy/privacy_policy.html</loc>
+      <lastmod>2024-07-07</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
@@ -39,16 +74,53 @@
 
    <url>
       <loc>https://blueloch.co.uk/pages/sitemap.html</loc>
-      <lastmod>2024-04-24</lastmod>
+      <lastmod>2024-07-07</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
 
    <url>
       <loc>https://blueloch.co.uk/pages/services.html</loc>
-      <lastmod>2024-04-24</lastmod>
+      <lastmod>2024-07-07</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
+
+   <url>
+      <loc>https://blueloch.co.uk/pages/support/support_redagile.html</loc>
+      <lastmod>2024-07-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+
+   <url>
+      <loc>https://blueloch.co.uk/pages/software/software.html</loc>
+      <lastmod>2024-07-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+
+   <url>
+      <loc>https://blueloch.co.uk/pages/software/betatesting.html</loc>
+      <lastmod>2024-07-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+
+   <url>
+      <loc>https://blueloch.co.uk/pages/software/homebrew/feelsync.html</loc>
+      <lastmod>2024-07-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+
+   <url>
+      <loc>https://blueloch.co.uk/pages/software/clients/redagile.html</loc>
+      <lastmod>2024-07-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+
+
 
 </urlset> 
