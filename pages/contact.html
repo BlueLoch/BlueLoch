@@ -30,7 +30,7 @@
         function fixFooter() {
             let height = window.innerHeight;
             let footer = document.getElementsByTagName('footer')[0];
-            let footerPos = footer.getBoundingClientRect().bottom;
+            let footerPos = footer.getBoundingClientRect().top;
 
             if ((footerPos + 1) < height) {
                 footer.classList.add('sticky-footer');
@@ -114,7 +114,7 @@
                         <br>
                     </div>
 
-                    <div class="horizontal-text">
+                    <!-- <div class="horizontal-text">
                         <img loading="lazy" style="max-height: 10rem; max-width: 10rem;" src="/resources/images/svgs/discord.svg">
                         <p style="text-align: center;">
                             Join our Discord server to help us test new software:
@@ -123,7 +123,7 @@
                                 href="https://discord.gg/UDbVj7HwEQ">BlueLoch Testing Server</a>
                         </p>
                         <br>
-                    </div>
+                    </div> -->
 
                     <div class="horizontal-text">
                         <img loading="lazy" style="max-height: 10rem; max-width: 10rem;" src="/resources/images/svgs/maintenance.svg">

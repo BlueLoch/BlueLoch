@@ -30,7 +30,7 @@
         function fixFooter() {
             let height = window.innerHeight;
             let footer = document.getElementsByTagName('footer')[0];
-            let footerPos = footer.getBoundingClientRect().bottom;
+            let footerPos = footer.getBoundingClientRect().top;
 
             if ((footerPos + 1) < height) {
                 footer.classList.add('sticky-footer');
