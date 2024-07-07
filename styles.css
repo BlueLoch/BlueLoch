@@ -930,7 +930,7 @@ ol li {
     }
 
     .collapsible-small input[name='panel']:checked+.collapsible {
-        height: 15rem;
+        height: 20rem;
     }
     
     .collapsible-large input[name='panel']:checked+.collapsible {
