@@ -25,24 +25,9 @@
     <!-- Resource Links -->
     <link rel="icon" href="/resources/images/logos/Nessy-blue.png" />
     <link rel="stylesheet" href="/styles.css">
-
-    <script>
-        function fixFooter() {
-            let height = window.innerHeight;
-            let footer = document.getElementsByTagName('footer')[0];
-            let footerPos = footer.getBoundingClientRect().bottom;
-
-            if ((footerPos + 1) < height) {
-                footer.classList.add('sticky-footer');
-            }
-            else {
-                footer.classList.remove('sticky-footer');
-            }
-        }
-    </script>
 </head>
 
-<body onload="fixFooter()" id="docbod" onclick="">
+<body id="docbod" onclick="">
     <nav id="nav">
         <a class="nav-logo" href="/index.html">
             <img src="/resources/images/logos/Banner-white.png">
@@ -50,7 +35,7 @@
 
         <a class="nav-link" href="/index.html">Home</a>
         <a class="nav-link" href="/pages/about.html">About</a>
-        <a class="nav-link nav-link-active" href="/pages/software/software.html">Software</a>
+        <a class="nav-link" href="/pages/software/software.html">Software</a>
         <a class="nav-link" href="/pages/services.html">Services</a>
 
         <a class="nav-contact link-btn" href="/pages/contact.html">Contact&nbsp;us</a>
@@ -81,53 +66,68 @@
     </div>
 
     <div id="content">
-        <section class="s-grey">
+        <section class="s-blue">
             <div class="s-content">
-                <h2>Our Software</h2>
-                <p>
-                    Here you will find a comprehensive list of all publicly available software we have developed.
-                </p>
+                <h2 style="color: #DADEE6;">Beta Testing</h2>
+                <h3 style="color: #DADEE6;">Terms, Conditions and Privacy</h3>
             </div>
         </section>
 
         <section class="s-transparent">
             <div class="s-content">
-
-                <div class="card-container">
-                    <div class="card-box">
-
-                        <div class="card-item">
-                            <a href="/pages/software/homebrew/feelsync.html" class="card-item-link">
-                                <div class="card-item-bg"></div>
-
-                                <div class="card-item-title">
-                                    <img src="/resources/images/software/feelsync.png">
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="card-item">
-                            <a href="/pages/software/clients/redagile.html" class="card-item-link">
-                                <div class="card-item-bg"></div>
-
-                                <div class="card-item-title">
-                                    <img src="/resources/images/clients/redagile.svg">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="s-white">
-            <div class="s-content">
-                <h2>Beta Testing</h2>
+                <h2>Terms and Conditions</h2>
                 <p>
-                    For information about software in beta testing, see our <a href="/pages/software/betatesting.html">beta testing page</a>.
+                    By participating in beta testing with us, you agree to the following terms and conditions:
+                </p>
+
+                <br><br>
+
+                <h3>Giving Feedback</h3>
+                <p>
+                    We ask that you provide detailed feedback, including: which feature you are referring to, what the
+                    current problem is, and if you have any suggestions on how it can be improved. Additionally, we ask
+                    that you be respectful. We're still humans with feelings, after all!
+                </p>
+
+                <br><br>
+
+                <h3>Confidentiality</h3>
+                <p>
+                    Software in beta may contain unreleased features. We ask that you do not share screenshots,
+                    recordings, or any information about the application publicly without prior permission from the
+                    developers.
+                </p>
+
+                <p>
+                    Additionally, we ask that you do not publicly release beta testing links without prior
+                    permission. You are welcome to freely share links to our Discord and other social media to let
+                    others join the testing.
                 </p>
             </div>
         </section>
+
+        <section class="s-lgrey">
+            <div class="s-content">
+                <h2>Privacy</h2>
+                <p>
+                    BlueLoch takes privacy incredibly seriously. As such, we aim to be transparent about any data we
+                    collect. Whilst the app itself may not collect data once released to the public, both Apple and
+                    Android™ devices will automatically provide us with some analytics, during beta testing, to help us
+                    improve our app. This includes:
+
+                <p>
+                    Crash logs, usage information, and your device model and specifications.
+                </p>
+
+                <p>
+                    When this data is submitted to us by Apple or Google, it may include your email address and name. No
+                    information we receive is shared to third parties; it will be used solely for the improvement of the
+                    relevant app.
+                </p>
+                </p>
+            </div>
+        </section>
+
 
 
         <footer class="s-bluegrad">
