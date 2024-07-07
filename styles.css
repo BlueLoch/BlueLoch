@@ -352,7 +352,6 @@ section ol li:not(.accordion-item) {
     color: var(--bltext);
     padding-top: 1rem;
     text-align: left;
-
 }
 
 section ul li:not(.accordion-item) {
@@ -530,7 +529,7 @@ footer p {
 
 footer a,
 p a:not(.link-btn, .link-btn-dark),
-li a:not(.link-btn, .link-btn-dark, .accordion-item) {
+.page-contents-list li a:not(.link-btn, .link-btn-dark, .accordion-item) {
     cursor: pointer;
     position: relative;
     transition: color 0.3s ease-in-out;
@@ -540,7 +539,7 @@ li a:not(.link-btn, .link-btn-dark, .accordion-item) {
 
 footer a::before,
 p a:not(.link-btn, .link-btn-dark)::before,
-a:not(.link-btn, .link-btn-dark)::before {
+.page-contents-list a:not(.link-btn, .link-btn-dark)::before {
     content: '';
     position: absolute;
     top: 120%;
@@ -552,19 +551,19 @@ a:not(.link-btn, .link-btn-dark)::before {
 }
 
 p a:not(.link-btn, .link-btn-dark)::before,
-li a:not(.link-btn, .link-btn-dark, .accordion-item)::before {
+.page-contents-list li a:not(.link-btn, .link-btn-dark, .accordion-item)::before {
     top: 100%;
     background-color: var(--blblue2);
 }
 
 p a:not(.link-btn, .link-btn-dark):hover,
-li a:not(.link-btn, .link-btn-dark, .accordion-item):hover {
+.page-contents-list li a:not(.link-btn, .link-btn-dark, .accordion-item):hover {
     color: var(--blblue2);
 }
 
 footer a:hover::before,
 p a:not(.link-btn, .link-btn-dark):hover::before,
-li a:not(.link-btn, .link-btn-dark, .accordion-item):hover::before {
+.page-contents-list li a:not(.link-btn, .link-btn-dark, .accordion-item):hover::before {
     transform: scaleX(1);
 }
 
@@ -804,7 +803,7 @@ input[name='panel'] {
     display: none;
 }
 
-label {
+.collapsible-group label {
     display: block;
     padding: 1rem;
     width: 100%;
@@ -860,10 +859,6 @@ input[name='panel']+.collapsible {
 input[name='panel']:checked+.collapsible {
     overflow: auto;
     padding-block: 1rem;
-}
-
-.collapsible-small [name='panel']:checked+.collapsible {
-    overflow: hidden;
 }
 
 .collapsible-small input[name='panel']:checked+.collapsible {
