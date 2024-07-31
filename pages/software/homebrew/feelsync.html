@@ -30,7 +30,7 @@
 <body id="docbod" onclick="" style="max-height: fit-content;">
     <nav id="nav">
         <a class="nav-logo" href="/index.html">
-            <img loading="lazy" src="/resources/images/logos/Banner-white.png">
+            <img src="/resources/images/logos/Banner-white.png">
         </a>
 
         <a class="nav-link" href="/index.html">Home</a>
@@ -46,7 +46,7 @@
             <input type="checkbox">
             <span class="menu" id="ham-menu-to-delay"> <span class="hamburger"></span> </span>
             <ul>
-                <li><img loading="lazy" src="/resources/images/logos/Banner-white.png"></li>
+                <li><img src="/resources/images/logos/Banner-white.png"></li>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/pages/about.html">About</a></li>
                 <li><a href="/pages/services.html">Services</a></li>
@@ -68,49 +68,92 @@
     <div id="content">
         <section class="s-transparent">
             <div class="s-content">
-                <img loading="lazy" src="/resources/images/software/feelsync.png"
+                <img loading="lazy" src="/resources/images/software/feelsync/logos/text.png"
                     style="padding: 1rem; max-width: 90%;">
             </div>
         </section>
 
-        <section class="s-feelsync">
+        <section class="s-white">
             <div class="s-content">
-                <div class="horizontal">
-                    <div class="horizontal-text" style="flex: 73%;">
-                        <h2>About</h2>
+                <h2>On this page</h2>
+                <div class="help-card-holder">
+                    <a href="#about" class="link-nodec">
+                        <div class="help-card">
+                            About FeelSync
+                        </div>
+                    </a>
+
+                    <a href="#beta" class="link-nodec">
+                        <div class="help-card">
+                            Beta Testing
+                        </div>
+                    </a>
+
+                    <a href="#start" class="link-nodec">
+                        <div class="help-card">
+                            Getting Started
+                        </div>
+                    </a>
+
+                    <a href="#faqs" class="link-nodec">
+                        <div class="help-card">
+                            FAQs
+                        </div>
+                    </a>
+
+                    <a href="#privacy" class="link-nodec">
+                        <div class="help-card">
+                            Privacy Policy
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="s-feelsync" id="about">
+            <div class="s-content">
+                <h2>About FeelSync</h2>
+                <p>
+                    FeelSync was made to help you track your mood, thoughts and feelings with your phone.
+                </p>
+                <br>
+
+                <div class="value-card-holder">
+                    <div class="value-card">
+                        <img loading="lazy" src="/resources/images/software/feelsync/sync.svg" loading="lazy">
+                        <h3>Make Syncs</h3>
                         <p>
-                            FeelSync is an app designed to help you understand your mental health. It let's you easily
-                            track
-                            your mood, thoughts and feelings, from the convenience of your phone, completely free. If
-                            you need a
-                            time-out, FeelSync has a number of exercises to help you get back in control.
+                            Syncs help you track your mood, thoughts and feelings
                         </p>
                     </div>
 
-                    <div class="horizontal-text" style="flex: 25%;">
-                        <div class="page-contents-list">
-                            <h3>On this page</h3>
-                            <ol>
-                                <li><a href="#faqs">FAQs</a></li>
-                                <li><a href="#how-tos">How Tos</a></li>
-                                <li><a href="#resources">Resources</a></li>
-                                <li><a href="#privacy">Privacy</a></li>
-                            </ol>
-                        </div>
+                    <div class="value-card">
+                        <img loading="lazy" src="/resources/images/software/feelsync/meditate.svg" loading="lazy">
+                        <h3>Complete exercises</h3>
+                        <p>
+                            Complete exercises to relax and bring yourself back to the moment
+                        </p>
+                    </div>
 
+                    <div class="value-card">
+                        <img loading="lazy" src="/resources/images/software/feelsync/chart.svg" loading="lazy">
+                        <h3>Track your Mind</h3>
+                        <p>
+                            Gain insights into what's going on in your head
+                        </p>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section class="s-grey">
+        <section class="s-grey" id="beta">
             <div class="s-content">
                 <h2>Beta Testing</h2>
                 <p>
                     FeelSync will shortly be starting beta testing. We'll update this area when it goes live, so if
                     you're interested keep an eye out!
-                    
+
                     <!-- If you're interested in helping out, you can join
                     our Discord server, follow our Instagram, or get in touch via email.
                 </p>
@@ -141,50 +184,65 @@
             </div>
         </section>
 
-        <section class="s-lgrey">
-            <div class="s-content" id="faqs">
+        <section class="s-lgrey" id="start">
+            <div class="s-content">
+                <h2>Getting Started</h2>
+                <div class="horizontal">
+                    <div class="horizontal-text">
+                        <p>
+                            FeelSync is available on both Android™ and iOS devices from the Google Play and App Store
+                            respectively. Simply type "FeelSync" into the searchbar and install it!
+                        </p>
+
+                        <p>
+                            When you first open the app there will be a quick tutorial to show you where you can find
+                            the most important features.
+                        </p>
+                    </div>
+
+                    <img style="max-width: 15rem; background-color: #0D47A1; padding: 1rem; border-radius: 20%;" src="/resources/images/software/feelsync/logos/logo.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="s-transparent" id="faqs">
+            <div class="s-content">
                 <h2>FAQs</h2>
                 <br>
 
-                <div class="collapsible-group">
-                    <div class="collapsible-container collapsible-small">
-                        <label for="panel_1">Installation</label>
-                        <input type="radio" name="panel" id="panel_1">
-                        <div class="collapsible">
-                            <p>
-                                FeelSync is available for free from both the Google Play store and Apple App Store.
-                                Android™ devices must be running Android™ version 11 or higher. Apple iOS and iPadOS®
-                                devices must be running version 11 or higher.
-                            </p>
-                        </div>
+                <div class="faq-card-holder">
+                    <div class="faq-card">
+                        <h3>Why make FeelSync?</h3>
+                        <p>
+                            FeelSync started as a passion project with a single vision in mind: a completely free mental
+                            health app. No subscriptions, no features locked behind paywalls, no ads.
+                        </p>
                     </div>
 
-                    <div class="collapsible-container collapsible-small">
-                        <label for="panel_2">What are Syncs?</label>
-                        <input type="radio" name="panel" id="panel_2" checked>
-                        <div class="collapsible">
-                            <p>
-                                Syncs are a record, created by you, of what you are thinking or feeling at a given time.
-                                Making Syncs allows you to track your mood throughout the day, as well as notice
-                                patterns in
-                                your emotions and thoughts.
-                            </p>
-                        </div>
+                    <div class="faq-card">
+                        <h3>How much does FeelSync cost?</h3>
+                        <p>
+                            All core features of FeelSync will be completely free forever. We have plans to introduce
+                            themes to the app which will cost a small amount of money to
+                            help us keep FeelSync up and running.
+                        </p>
                     </div>
 
-                    <div class="collapsible-container collapsible-small">
-                        <label for="panel_3">Future features</label>
-                        <input type="radio" name="panel" id="panel_3" checked>
-                        <div class="collapsible">
-                            <p>
-                                FeelSync isn't finished yet! We plan to continue to develop FeelSync adding new features
-                                such as more analytics, new and improved exercises, personalisation, and more! If you
-                                have
-                                something
-                                you'd like to see, or wish to report an issue, get in touch with us at <a
-                                    href="mailto:contact@blueloch.co.uk">contact@blueloch.co.uk</a>!
-                            </p>
-                        </div>
+                    <div class="faq-card">
+                        <h3>Is FeelSync finished?</h3>
+                        <p>
+                            Nope! We plan to continue to develop FeelSync, adding new features and fixing bugs, for the
+                            forseeable future. If there's something you'd like to see, let us know at <a
+                                href="mailto:support@blueloch.co.uk">support@blueloch.co.uk</a>!
+                        </p>
+                    </div>
+
+                    <div class="faq-card">
+                        <h3>How does FeelSync handle my data?</h3>
+                        <p>
+                            FeelSync stores all data you create on your device giving you complete control. For more
+                            information, see FeelSync's <a href="/pages/privacy/feelsync.html">privacy policy</a>.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -193,7 +251,7 @@
 
 
 
-        <section class="s-transparent">
+        <!-- <section class="s-transparent">
             <div class="s-content" id="how-tos">
                 <h2>How Tos</h2>
                 <br>
@@ -225,234 +283,9 @@
                             </p>
                         </div>
                     </div>
-
-                    <div class="collapsible-container collapsible-large">
-                        <label for="panel_5">Make a Thought Sync</label>
-                        <input type="radio" name="panel" id="panel_5">
-                        <div class="collapsible">
-                            <p>
-                                You can make any type of Sync from the home screen. To make a Thought Sync:
-                            <div class="horizontal">
-                                <ol class="horizontal-text">
-                                    <li>Tap the light blue button under "Sync a thought"</li>
-                                    <li>Type what the thought was in the textbox</li>
-                                    <li>Optionally, select how the thought made you feel from the dropdown box</li>
-                                    <li>Rate your mood from 1 (bad) to 5 (good)</li>
-                                    <li>Click "Save"</li>
-                                </ol>
-
-                                <img loading="lazy"
-                                    src="/resources/images/software/feelsync-help/thoughtsync-button.png">
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="collapsible-container collapsible-large">
-                        <label for="panel_6">Complete an exercise</label>
-                        <input type="radio" name="panel" id="panel_6">
-                        <div class="collapsible">
-                            <p>
-                                Exercises will take you through a number of steps to help you relax, focus on a thought
-                                or
-                                feeling, or bring yourself back to reality. To complete an exercise:
-
-                            <div class="horizontal">
-                                <ol class="horizontal-text">
-                                    <li>In the main menu (≡), click "Exercises"</li>
-                                    <li>If you wish to know more about an exercise, click the blue "Info" button</li>
-                                    <li>Click the green "Start" button to begin the exercise</li>
-                                    <li>If you see a page with some text, read through the text and click "Next"</li>
-                                    <li>If you see a page with a textbox, fill in the textbox with the relevant
-                                        information
-                                        and click "Next"</li>
-                                    <li>If you see a page with a pulsating blue circle, relax and breathe. Use the
-                                        circle as
-                                        a guide, but do not feel pressured to time your breathing with it. Once the
-                                        timer
-                                        reaches zero, the exercise will automatically move on</li>
-                                    <li>Once you have completed all steps, you can click the green "Close" button to
-                                        return
-                                        to the "Exercises" screen</li>
-                                </ol>
-
-                                <img loading="lazy" src="/resources/images/software/feelsync-help/exercises-list.png">
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="collapsible-container collapsible-large">
-                        <label for="panel_7">Review Syncs and exercises</label>
-                        <input type="radio" name="panel" id="panel_7">
-                        <div class="collapsible">
-                            <p>
-                                Once you have made a Sync, or completed an exercise, you can view that Sync and any
-                                others.
-                                To Review syncs and exercises:
-
-                            <div class="horizontal">
-                                <ol class="horizontal-text">
-                                    <li>In the main menu (≡), click "Review"</li>
-                                    <li>If you wish to review a day other than today, use the left and right arrows
-                                        beside
-                                        the date to choose the day</li>
-                                    <li>If you wish to get to a long-gone day quickly, click the "Toggle Calendar"
-                                        button
-                                        and select the day on the calendar</li>
-                                </ol>
-
-                                <img loading="lazy" src="/resources/images/software/feelsync-help/day-review.png">
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="collapsible-container collapsible-large">
-                        <label for="panel_8">Find crisis resources</label>
-                        <input type="radio" name="panel" id="panel_8">
-                        <div class="collapsible">
-                            <p>
-                                If you are struggling, FeelSync has a database of crisis helplines you can contact. To
-                                find
-                                these:
-                            <div class="horizontal">
-                                <div class="horizontal-text">
-                                    <ol>
-                                        <li>In the main menu (≡), click "Crisis"</li>
-                                        <li>Select your country from the dropdown menu</li>
-                                        <li>A list of crisis resources for your country will now be visible</li>
-                                    </ol>
-
-                                    <p>
-                                        Please note some countries have been excluded from the list as they have no
-                                        dedicated crisis
-                                        helplines, or because the app is not available in those countries.
-                                        <br>
-                                        Additionally, some countries may not have an exhaustive list of helplines, such
-                                        as
-                                        the
-                                        United
-                                        States, as there are simply too many available.
-                                        <br>
-                                        If you can't find help through FeelSync, you can try this link: <a
-                                            href="https://www.therapyroute.com/article/helplines-suicide-hotlines-and-crisis-lines-from-around-the-world">Therapy
-                                            Route</a>.
-                                    </p>
-                                </div>
-
-
-
-                                <img loading="lazy" src="/resources/images/software/feelsync-help/crisis-page.png">
-
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="collapsible-container collapsible-large">
-                        <label for="panel_9">Add a Survival Kit item</label>
-                        <input type="radio" name="panel" id="panel_9">
-                        <div class="collapsible">
-                            <p>
-                                You can add items to your Survival Kit to help you through tough times. To do this:
-                            <div class="horizontal">
-                                <ol class="horizontal-text">
-                                    <li>In the main menu (≡), click "Crisis"</li>
-                                    <li>Select the tab marked with a starred folder icon</li>
-                                    <li>Click the green "New Item" button</li>
-                                    <li>Fill in the information including the name, type of item, and the item's
-                                        content.
-                                        Text items will be displayed as they are, quote items displayed in quotes,
-                                        and link
-                                        items as clickable links</li>
-                                    <li>Click the green "Save" button</li>
-                                </ol>
-
-                                <img loading="lazy" src="/resources/images/software/feelsync-help/survival-kit.png">
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="collapsible-container collapsible-large">
-                        <label for="panel_10">Edit a  Kit item</label>
-                        <input type="radio" name="panel" id="panel_10">
-                        <div class="collapsible">
-                            <p>
-                                Once you have made a Survival Kit item, you can edit it easily. To edit it:
-                            <div class="horizontal">
-                                <ol class="horizontal-text">
-                                    <li>In the main menu (≡), click "Crisis"</li>
-                                    <li>Select the tab marked with a starred folder icon</li>
-                                    <li>Next to the item you want to edit, click the yellow button with a pencil
-                                        icon
-                                    </li>
-                                    <li>Change what you need to change, then click the green "Save" button</li>
-                                </ol>
-
-                                <img loading="lazy" src="/resources/images/software/feelsync-help/addedit-csi.png">
-                            </div>
-
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="collapsible-container collapsible-large">
-                        <label for="panel_11">Delete a Survival Kit item</label>
-                        <input type="radio" name="panel" id="panel_11">
-                        <div class="collapsible">
-                            <p>
-                                Once you have made a Survival Kit item, you can delete it easily. To delete it:
-                            <div class="horizontal">
-                                <ol class="horizontal-text">
-                                    <li>In the main menu (≡), click "Crisis"</li>
-                                    <li>Select the tab marked with a starred folder icon</li>
-                                    <li>Next to the item you want to edit, click the red button with a bin icon</li>
-                                    <li>Click the "Delete" button to confirm you wish to delete the item</li>
-                                </ol>
-
-                                <img loading="lazy" src="/resources/images/software/feelsync-help/delete-csi.png">
-                            </div>
-
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="collapsible-container collapsible-large">
-                        <label for="panel_12">Delete your data</label>
-                        <input type="radio" name="panel" id="panel_12">
-                        <div class="collapsible">
-                            <p>
-                                If you wish to delete your data, you can do so easily from within the app. Note that
-                                this
-                                will only delete Syncs and exercises. You can delete Survival Kit items from the
-                                Survival
-                                Kit page. To delete data:
-                            <div class="horizontal">
-                                <ol class="horizontal-text">
-                                    <li>In the main menu (≡), click "Settings"</li>
-                                    <li>Click the red "Delete Data" button</li>
-                                    <li>Select whether you wish to delete data over days, weeks or months</li>
-                                    <li>Select how many days weeks or months you wish to delete data from</li>
-                                    <li>Optionally, if you wish to delete all of your data, you can tick the "Delete all
-                                        data" checkbox</li>
-                                    <li>Click the red "Delete" button</li>
-                                    <li>Click the "Delete" button to confirm you wish to delete the data</li>
-                                </ol>
-
-                                <img loading="lazy" src="/resources/images/software/feelsync-help/delete-data.png">
-                            </div>
-
-
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- <section class="s-grey">
             <div class="s-content" id="resources">
@@ -465,8 +298,8 @@
             </div>
         </section> -->
 
-        <section class="s-white">
-            <div class="s-content" id="privacy">
+        <section class="s-white" id="privacy">
+            <div class="s-content">
                 <h2>Privacy</h2>
                 <p>
                     You can find FeelSync's privacy policy <a href="/pages/privacy/feelsync.html">here</a>.
